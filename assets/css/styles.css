@@ -1,0 +1,57 @@
+:root {
+    --fs-100: clamp(0.6944rem, 0.6913rem + 0.0157vw, 0.7035rem);
+    --fs-200: clamp(0.8333rem, 0.797rem + 0.1816vw, 0.9377rem);
+    --fs-300: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+    --fs-400: clamp(1.2rem, 1.0378rem + 0.8109vw, 1.6663rem);
+    --fs-500: clamp(1.44rem, 1.1683rem + 1.3585vw, 2.2211rem);
+    --fs-600: clamp(1.728rem, 1.2992rem + 2.1439vw, 2.9607rem);
+    --fs-700: clamp(2.0736rem, 1.4221rem + 3.2575vw, 3.9467rem);
+    --fs-800: clamp(2.4883rem, 1.5239rem + 4.8219vw, 5.2609rem);
+}
+
+/***************************************** RESET CSS ***********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+:has(:target){
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+p {
+    max-width: 65ch;
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+
+img, svg, video, picture {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+input, textarea, select {
+    border: none;
+    outline: none;
+}
+/***************************************** RESET CSS ***********************************************/
+
+
