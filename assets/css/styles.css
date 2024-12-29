@@ -1,4 +1,6 @@
 :root {
+
+    /**************** FONT SIZES VARIABLES ************************/
     --fs-100: clamp(0.6944rem, 0.6913rem + 0.0157vw, 0.7035rem);
     --fs-200: clamp(0.8333rem, 0.797rem + 0.1816vw, 0.9377rem);
     --fs-300: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
@@ -7,7 +9,20 @@
     --fs-600: clamp(1.728rem, 1.2992rem + 2.1439vw, 2.9607rem);
     --fs-700: clamp(2.0736rem, 1.4221rem + 3.2575vw, 3.9467rem);
     --fs-800: clamp(2.4883rem, 1.5239rem + 4.8219vw, 5.2609rem);
+
+    /**************** GRID VARIABLES ************************/
+    --grid-gap: 0;
+    --grid-repeat: 1;
+    --grid-content-size: 1fr;
+
+
+    /**************** FLEX VARIABLES ************************/
+    --flex-gap: 0;
+    --flex-align: center;
+    --flex-direction: row;
+    --flex-justify: space-between;
 }
+
 
 /***************************************** RESET CSS ***********************************************/
 * {
@@ -55,3 +70,52 @@ input, textarea, select {
 /***************************************** RESET CSS ***********************************************/
 
 
+/***************************************** REUSABLE CSS ***********************************************/
+    /*************************** STRUCTURE *********************************/
+    .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(var(--grid-repeat), var(--grid-content-size));
+    }    
+
+    .flex {
+        display: flex;
+        gap: var(--flex-gap);
+        align-items: var(--flex-align);
+        justify-content: var(--flex-justify);
+        flex-direction: var(--flex-direction);
+    }
+    /*************************** STRUCTURE *********************************/
+
+    /*************************** TYPOGRAPHY *********************************/
+    .text-xl {
+        font-size: var(--fs-600);
+    }
+
+    .text-lg {
+        font-size: var(--fs-500);
+    }
+
+    .text-md {
+        font-size: var(--fs-400);
+    }
+
+    .text {
+        font-size: var(--fs-300);
+    }
+
+    .text-sm {
+        font-size: var(--fs-200);
+    }
+
+    .text-xs {
+        font-size: var(--fs-100);
+    }
+    /*************************** TYPOGRAPHY *********************************/
+
+    /*************************** UTILITIES *********************************/
+    
+    /*************************** UTILITIES *********************************/
+
+
+/***************************************** REUSABLE CSS ***********************************************/
