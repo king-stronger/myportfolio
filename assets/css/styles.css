@@ -1,19 +1,23 @@
 :root {
 
     /**************** FONT SIZES VARIABLES ************************/
-    --fs-100: clamp(0.6944rem, 0.6913rem + 0.0157vw, 0.7035rem);
-    --fs-200: clamp(0.8333rem, 0.797rem + 0.1816vw, 0.9377rem);
+    --fs-100: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
+    --fs-200: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
     --fs-300: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-    --fs-400: clamp(1.2rem, 1.0378rem + 0.8109vw, 1.6663rem);
-    --fs-500: clamp(1.44rem, 1.1683rem + 1.3585vw, 2.2211rem);
-    --fs-600: clamp(1.728rem, 1.2992rem + 2.1439vw, 2.9607rem);
-    --fs-700: clamp(2.0736rem, 1.4221rem + 3.2575vw, 3.9467rem);
-    --fs-800: clamp(2.4883rem, 1.5239rem + 4.8219vw, 5.2609rem);
+    --fs-400: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+    --fs-500: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
+    --fs-600: clamp(1.728rem, 1.4799rem + 1.2407vw, 2.4414rem);
+    --fs-700: clamp(2.0736rem, 1.7334rem + 1.7011vw, 3.0518rem);
+    --fs-800: clamp(2.4883rem, 2.027rem + 2.3067vw, 3.8147rem);
 
     /**************** GRID VARIABLES ************************/
     --grid-gap: 0;
     --grid-repeat: 1;
     --grid-content-size: 1fr;
+    --grid-align-items: stretch;
+    --grid-align-content: stretch;
+    --grid-justify-items: stretch;
+    --grid-justify-content: start;
 
 
     /**************** FLEX VARIABLES ************************/
@@ -21,6 +25,9 @@
     --flex-align: center;
     --flex-direction: row;
     --flex-justify: space-between;
+
+    /**************** FLOW VARIABLES ************************/
+    --flow: 1rem;
 }
 
 
@@ -39,6 +46,7 @@
 
 body {
     min-height: 100dvh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +63,14 @@ p {
 img, svg, video, picture {
     display: block;
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 button {
@@ -75,6 +91,10 @@ input, textarea, select {
     .grid {
         display: grid;
         gap: var(--grid-gap);
+        align-items: var(--grid-align-items);
+        justify-items: var(--grid-justify-items);
+        align-content: var(--grid-align-content);
+        justify-content: var(--grid-justify-content);
         grid-template-columns: repeat(var(--grid-repeat), var(--grid-content-size));
     }    
 
@@ -85,9 +105,17 @@ input, textarea, select {
         justify-content: var(--flex-justify);
         flex-direction: var(--flex-direction);
     }
+
+    .flow > * + * {
+        margin-top: var(--flow);
+    }
     /*************************** STRUCTURE *********************************/
 
     /*************************** TYPOGRAPHY *********************************/
+    .text-xxl {
+        font-size: var(--fs-700);
+    }
+
     .text-xl {
         font-size: var(--fs-600);
     }
@@ -111,11 +139,106 @@ input, textarea, select {
     .text-xs {
         font-size: var(--fs-100);
     }
+
+    .text-center {
+        text-align: center;
+        margin-inline: auto;
+    }
+
     /*************************** TYPOGRAPHY *********************************/
 
     /*************************** UTILITIES *********************************/
+    .button {
+        display: block;
+        padding: 1em;
+        border-radius: .5em;
+        background: lightskyblue;
+    }
+
+    .square-img {
+        aspect-ratio: 1/1;
+    }
     
     /*************************** UTILITIES *********************************/
 
 
 /***************************************** REUSABLE CSS ***********************************************/
+
+/***************************************** APP ***********************************************/
+body {
+    display: grid;
+    grid-template-columns: 1fr min(1200px, 100%) 1fr;
+}
+
+#app {
+    grid-column: 2 / 3;
+}
+/***************************************** APP ***********************************************/
+
+
+/***************************************** HEADER ***********************************************/
+.header {
+    padding-block: 1rem;
+}
+
+.nav {
+    --flex-gap: 2rem;
+}
+/***************************************** HEADER ***********************************************/
+
+
+/***************************************** HOME ***********************************************/
+.home-section {
+    --grid-gap: 5rem;
+    --grid-repeat: 2;
+    --grid-align-items: center;
+}
+
+.home-content {
+    --flow: 2rem;
+    --grid-gap: 1rem;
+    --grid-repeat: 3;
+    --flex-gap: 1rem;
+    --flex-justify: end;
+}
+
+.home-content article {
+    --flow: 0.35rem;
+    padding: 1.5em;
+    border-radius: 1em;
+    background: #fef;
+}
+
+.home-content article > * {
+    display: block;
+}
+/***************************************** HOME ***********************************************/
+
+
+
+/***************************************** SKILLS ***********************************************/
+.skills-section {
+    --grid-repeat: 2;
+    --grid-justify-items: center;
+}
+
+.skills-section article {
+    padding: 2em 5em;
+    background: #fef;
+    border-radius: 1em;
+}
+
+.skills-list {
+    --grid-repeat: 3;
+    --grid-gap: 3rem;
+    --grid-justify-items: stretch;
+}
+
+.skill {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/***************************************** SKILLS ***********************************************/
+
