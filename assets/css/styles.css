@@ -376,7 +376,55 @@ input, textarea, select {
 /***************************************** SERVICES ***********************************************/
 
 
-/***************************************** PROEJECTS ***********************************************/
+/***************************************** QUALIFICATIONS ***********************************************/
+.qualification-section {
+    width: min(600px, 100%);
+    margin-inline: auto;
+}
+
+.timeline-education {
+    position: relative;
+}
+
+.timeline-line {
+    width: 3px;
+    position: absolute;
+    border-radius: .5em;
+    inset: 0 50% 0 auto;
+    background: var(--first-color);
+}
+
+.timeline-point {
+    width: 18px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    inset: auto 48.55% auto auto;
+    background-color: var(--first-color);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: start;
+    margin-block: 5em;
+}
+
+
+.timeline-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-content {
+    gap: .25rem;
+    width: min(45%);
+    display: flex;
+    flex-direction: column;
+}
+/***************************************** QUALIFICATIONS ***********************************************/
+
+
+
+/***************************************** PROJECTS ***********************************************/
 .projects-section {
     --grid-gap: 3rem;
     --grid-repeat: 4;
@@ -398,7 +446,7 @@ input, textarea, select {
 .project img {
     border-radius: 1rem;
 }
-/***************************************** PROEJECTS ***********************************************/
+/***************************************** PROJECTS ***********************************************/
 
 
 /***************************************** CONTACT ***********************************************/
