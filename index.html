@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div id="app">
-        <header class="header flex">
+        <header class="header flex" id="header">
             <h1 class="text-lg">Stronger</h1>
 
             <nav class="nav flex">
@@ -26,28 +25,28 @@
         </header>
 
         <section class="home-section flow" id="home">
-            <h2 class="text-center text-lg">My intro</h2>
-            <h3 class="text-center text-xl">About Me</h3>
+            <h2 class="text-center text-md">My intro</h2>
+            <h3 class="text-center text-xl title">About Me</h3>
             <div class="grid">
                 <div class="home-img">
-                    <img src="assets/images/profile2.jpg" alt="" class="square-img">
+                    <img src="assets/images/profile3.jpg" alt="" class="rounded-img">
                 </div>
                 <div class="home-content flow">
                     <div class="grid">
                         <article class="flow">
-                            <i class='text-center bx bx-medal' ></i>
+                            <i class='text-center bx bx-medal icon'></i>
                             <span class="text-center">Experience</span>
                             <span class="text-center">8 years working</span>
                         </article>
 
                         <article class="flow">
-                            <i class='text-center bx bx-briefcase-alt' ></i>
+                            <i class='text-center bx bx-briefcase-alt icon'></i>
                             <span class="text-center">Completed</span>
                             <span class="text-center">8 years working</span>
                         </article>
 
                         <article class="flow">
-                            <i class='text-center bx bx-support' ></i>
+                            <i class='text-center bx bx-support icon'></i>
                             <span class="text-center">Support</span>
                             <span class="text-center">8 years working</span>
                         </article>
@@ -66,8 +65,8 @@
         </section>
 
         <section class="skills-section flow" id="skills">
-            <h2 class="text-center text-lg">My abilities</h2>
-            <h3 class="text-center text-xl">My Skills</h3>
+            <h2 class="text-center text-md">My abilities</h2>
+            <h3 class="text-center text-xl title">My Skills</h3>
             <div class="grid">
                 <article class="flow">
                     <h2 class="text-center text-md">Frontend Developer</h2>
@@ -107,7 +106,7 @@
                             <span>PHP</span>
                         </li>
                         <li class="skill">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
                             <span>Node JS</span>
                         </li>
                         <li class="skill">
@@ -128,102 +127,208 @@
                         </li>
                     </ul>
                 </article>
+
+                <article class="flow">
+                    <h2 class="text-center text-md">Cybersecurity</h2>
+                    <ul class="skills-list grid">
+                        <li class="skill">
+                            <img src="assets/images/cyber/nmap.png" alt="">
+                            <span>NMAP</span>
+                        </li>
+                        <li class="skill">
+                            <img src="assets/images/cyber/metasploit.png" alt="">
+                            <span>Metasploit</span>
+                        </li>
+                        <li class="skill">
+                            <img src="assets/images/cyber/burp.png" alt="">
+                            <span>Burp Suite</span>
+                        </li>
+                        <li class="skill">
+                            <img src="assets/images/cyber/wireshark.png" alt="">
+                            <span>wireshark</span>
+                        </li>
+                        <li class="skill">
+                            <img src="assets/images/cyber/openvas.png" alt="">
+                            <span>OpenVas</span>
+                        </li>
+                        <li class="skill">
+                            <img src="assets/images/cyber/hydra.png" alt="">
+                            <span>Hydra</span>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </section>
 
         <section class="services-section flow" id="services">
-            <h2 class="text-center text-lg">My services</h2>
-            <h3 class="text-center text-xl">What i offer</h3>
+            <h2 class="text-center text-md">My services</h2>
+            <h3 class="text-center text-xl title">What i offer</h3>
             <div class="grid">
-                <article class="article">
-                    <h2 class="text-md text-center">Web development</h2>
-                    <button class="link">See more</button>
-                    <div class="modal">
-                        <h2 class="text-md text-center">Web development</h2>
+                <article class="services">
+                    <h2 class="text text-center">User Interface Development</h2>
+                    <div class="flex">
+                        <button class="link open-modal text-sm">
+                            See more
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </button>
+                    </div>
+                    <dialog class="modal flow">
+                        <button class="link close-modal"><i class='bx bx-x'></i></button>
+                        <h2 class="text-md text-center">User Interface Development</h2>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nisi placeat veniam repellat vero iusto, eveniet exercitationem ex, aliquam libero beatae quisquam minus dolorum delectus laboriosam quae cumque repudiandae amet!
+                            Design interactive and high-performance user experiences
                         </p>
                         <ul class="services-list">
-                            <li>Build responsive websites and webapp</li>
-                            <li>Develop custom full-stack web applications</li>
-                            <li>Design and secure RESTful APIs</li>
-                            <li>Integrate third-party services (e.g., ChatGPT, payment gateways)</li>
-                            <li>Automate business processes with web tools</li>
+                            <li>Develop responsive websites optimized for all devices</li>
+                            <li>Build dynamic applications with React or Svelte</li>
+                            <li>Integrate Git for collaborative version control</li>
+                            <li>Optimize performance to reduce loading times</li>
+                            <li>Implement best UX/UI practices for smooth navigation</li>
                         </ul>
-                    </div>
+                    </dialog>
                 </article>
                 
-                <article class="article">
-                    <h2 class="text-md text-center">Web development</h2>
-                    <button class="link">See more</button>
-                    <div class="modal">
-                        <h2 class="text-md text-center">Web development</h2>
+                <article class="services">
+                    <h2 class="text text-center">Backend Development and APIs</h2>
+                    <div class="flex">
+                        <button class="link open-modal text-sm">
+                            See more
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </button>
+                    </div>
+                    <dialog class="modal flow">
+                        <button class="link close-modal"><i class='bx bx-x'></i></button>
+                        <h2 class="text-md text-center">Backend Development and APIs</h2>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nisi placeat veniam repellat vero iusto, eveniet exercitationem ex, aliquam libero beatae quisquam minus dolorum delectus laboriosam quae cumque repudiandae amet!
+                            Build robust and secure backend systems to support your applications
                         </p>
                         <ul class="services-list">
-                            <li>Build responsive websites and webapp</li>
-                            <li>Develop custom full-stack web applications</li>
-                            <li>Design and secure RESTful APIs</li>
-                            <li>Integrate third-party services (e.g., ChatGPT, payment gateways)</li>
-                            <li>Automate business processes with web tools</li>
+                            <li>Create RESTful and GraphQL APIs for efficient data management</li>
+                            <li>Develop backend applications with Nodejs, Express, or Laravel</li>
+                            <li>Manage relational databases with PostgreSQL and MySQL</li>
+                            <li>Implement secure authentication and user management</li>
+                            <li>Deploy cloud infrastructures for optimal scalability</li>
                         </ul>
-                    </div>
+                    </dialog>
                 </article>
 
-                <article class="article">
-                    <h2 class="text-md text-center">Web development</h2>
-                    <button class="link">See more</button>
-                    <div class="modal">
-                        <h2 class="text-md text-center">Web development</h2>
+                <article class="services">
+                    <h2 class="text text-center">System and Application Security</h2>
+                    <div class="flex">
+                        <button class="link open-modal text-sm">
+                            See more
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </button>
+                    </div>
+                    <dialog class="modal flow">
+                        <button class="link close-modal"><i class='bx bx-x'></i></button>
+                        <h2 class="text-md text-center">System and Application Security</h2>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nisi placeat veniam repellat vero iusto, eveniet exercitationem ex, aliquam libero beatae quisquam minus dolorum delectus laboriosam quae cumque repudiandae amet!
+                            Protect your applications and infrastructures from cyber threats
                         </p>
                         <ul class="services-list">
-                            <li>Build responsive websites and webapp</li>
-                            <li>Develop custom full-stack web applications</li>
-                            <li>Design and secure RESTful APIs</li>
-                            <li>Integrate third-party services (e.g., ChatGPT, payment gateways)</li>
-                            <li>Automate business processes with web tools</li>
+                            <li>Conduct security audits to identify vulnerabilities</li>
+                            <li>Perform penetration testing on applications and networks to find weaknesses</li>
+                            <li>Secure infrastructures and critical entry points</li>
+                            <li>Analyze risks associated with sensitive data and implement solutions</li>
+                            <li>Test systems against brute-force attacks and other security threats</li>
                         </ul>
-                    </div>
+                    </dialog>
                 </article>
             </div>
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section flow" id="projects">
             <h3 class="text-center text-lg">My portfolio</h3>
-            <h2 class="text-center text-xl">Recents Works</h2>
+            <h2 class="text-center text-xl title">Recents Works</h2>
+            <div class="grid">
+                <article class="project">
+                    <div>
+                        <img src="assets/images/projects/work.png" alt="">
+                    </div>
+                    <span>Micro-framework PHP</span>
+                    <a class="link">
+                        Demo
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </a>
+                </article>
 
+                <article class="project">
+                    <div>
+                        <img src="assets/images/projects/work.png" alt="">
+                    </div>
+                    <span>Micro-framework PHP</span>
+                    <a class="link">
+                        Demo
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </a>
+                </article>
+
+
+                <article class="project">
+                    <div>
+                        <img src="assets/images/projects/work.png" alt="">
+                    </div>
+                    <span>Micro-framework PHP</span>
+                    <a class="link">
+                        Demo
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </a>
+                </article>
+
+
+                <article class="project">
+                    <img src="assets/images/projects/work.png" alt="">
+                    <span>Micro-framework PHP</span>
+                    <a class="link">
+                        Demo
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </a>
+                </article>
+            </div>
         </section>
 
-        <section class="contact-section" id="contact">
+        <section class="contact-section flow" id="contact">
             <h2 class="text-center text-lg">Contact Me</h2>
-            <h3 class="text-center text-xl">Get in touch</h3>
-            <div>
-                <div>
-                    <span>Talk to Me</span>
-                    <div>
-                        <span>Email</span>
-                        <a href="mailto:lkingstronger@gmail.com">lkingstronger@gmail.com</a>
+            <h3 class="text-center text-xl title">Get in touch</h3>
+            <div class="grid">
+                <div class="flow">
+                    <h3 class="text-lg text-center">Talk to Me</h3>
+                    <div class="contact-parts">
+                        <span class="text-md">Email</span><br>
+                        <span>lkingstronger@gmail.com</span>
+                        <a class="link" href="mailto:lkingstronger@gmail.com">
+                            Write me
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </a>
                     </div>
-                    <div>
-                        <span>Whatsapp</span>
-                        <a href="">95 30 86 31</span>
+                    <div class="contact-parts">
+                        <span class="text-md">Whatsapp</span><br>
+                        <span>(223) 71 07 34 19</span>
+                        <a class="link" href="tel:to">
+                            Write me
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </a>
                     </div>
-                    <div>
-                        <span>LinkedIn</span>
-                        <a href="">Stronger Alaefule</a>
+                    <div class="contact-parts">
+                        <span class="text-md">LinkedIn</span><br>
+                        <span>Stronger Alaefule</span>
+                        <a class="link" href="https://linkedin.com">
+                            Write me
+                            <i class='bx bx-right-arrow-alt icon'></i>
+                        </a>
                     </div>
                 </div>
-                <form action="">
-                    <span>Write me your project</span>
+                <form action="" class="form">
+                    <h3 class="text-lg text-center">Write me your project</h3>
                     <input type="text" name="name" id="name" placeholder="Enter your name">
                     <input type="text" name="email" id="email" placeholder="Enter your email">
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" placeholder="Enter your message"></textarea>
                 </form>
             </div>
         </section>
     </div>
+
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
