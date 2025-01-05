@@ -2,8 +2,8 @@
     :root {
         --text-color: hsl(216, 8%, 75%);
         --title-color: hsl(219, 15%, 95%);
-        --primary-color: hsl(323, 79%, 79%);
         --accent-color: hsl(250, 66%, 75%);
+        --primary-color: hsl(323, 79%, 79%);
         --container-color: hsl(218, 31%, 12%);
         --background-color: hsl(221, 46%, 8%);
     }
