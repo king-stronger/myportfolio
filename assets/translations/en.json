@@ -1,0 +1,133 @@
+{
+    "title": "Stronger - Full Stack Developer & Cybersecurity Expert",
+    "header": {
+        "nav": {
+            "home": "Home",
+            "skills": "Skills",
+            "qualification": "Qualifications",
+            "services": "Services",
+            "projects": "Projects",
+            "contact": "Contact",
+            "language": "English",
+            "language_french": "Français"
+        }
+    },
+    "home": {
+        "title": "Welcome to My Portfolio",
+        "subtitle": "About Me",
+        "experience": "Experience",
+        "experience_duration": "6 months",
+        "completed": "Completed",
+        "projects": "5 Projects Delivered",
+        "support": "Support Availability",
+        "support_availability": "24/7",
+        "bio": "I'm a passionate developer and pentester with a love for both building and breaking things. My journey started early—fascinated by video games, I taught myself to code after discovering an abandoned Dragon Ball project in middle school. Since then, I've explored everything from Java to Unity, and after high school, I fully committed to development and cybersecurity. I thrive on learning and diving deep into topics, often binge-watching tutorials to master them. One of my proudest achievements is creating a micro-framework, which marked my transition from coder to developer. I love backend development for its architectural challenges and cybersecurity for the thrill of hacking. Outside of tech, I’m a huge fan of video games, manga, chess, and basketball. Driven by curiosity and big ambitions, I aspire to create games that leave a mark and develop systems that can make a real impact in Africa ",
+        "download_cv": "Download My CV",
+        "contact_me": "Contact Me Now"
+    },
+    "skills": {
+        "title": "My Technical Skills",
+        "subtitle": "Fullstack Development & Cybersecurity",
+        "frontend": {
+            "title": "Frontend Development"
+        },
+        "backend": {
+            "title": "Backend Development"
+        },
+        "cybersecurity": {
+            "title": "Cybersecurity"
+        }
+    },
+    "services": {
+        "title": "My Professional Services",
+        "subtitle": "What I Offer",
+        "button": "Learn More",
+        "list": {
+            "ui": {
+                "title": "UI/UX Design & Frontend Development",
+                "description": "Create engaging user interfaces with performance optimization for a seamless user experience.",
+                "details": {
+                    "first": "Design responsive websites optimized for all screen sizes",
+                    "second": "Develop dynamic web applications using React or Svelte",
+                    "third": "Utilize Git for version control and collaborative development",
+                    "fourth": "Optimize websites for fast loading times and performance",
+                    "fifth": "Implement user-centric UX/UI practices for intuitive navigation"
+                }
+            },
+            "backend": {
+                "title": "Backend Development & API Integration",
+                "description": "Develop secure and scalable backend systems to support modern web applications.",
+                "details": {
+                    "first": "Build RESTful APIs and GraphQL endpoints for efficient data handling",
+                    "second": "Develop backend systems with Node.js, Express, and Laravel",
+                    "third": "Manage databases (SQL, PostgreSQL, MySQL) for efficient data storage",
+                    "fourth": "Implement secure user authentication and authorization",
+                    "fifth": "Deploy scalable cloud solutions with Docker and Kubernetes"
+                }
+            },
+            "security": {
+                "title": "System & Application Security Testing",
+                "description": "Protect your applications and systems from potential cyber threats.",
+                "details": {
+                    "first": "Conduct thorough security audits to identify vulnerabilities",
+                    "second": "Perform penetration testing on web applications and networks",
+                    "third": "Secure critical infrastructure and entry points",
+                    "fourth": "Analyze data risks and implement secure solutions",
+                    "fifth": "Test applications against brute-force and security exploits"
+                }
+            }
+        }
+    },
+    "qualification": {
+        "title": "My Qualifications",
+        "subtitle": "Education & Certifications",
+        "timeline": {
+            "first": {
+                "title": "Full Stack Developer",
+                "institution": "FreeCodeCamp",
+                "duration": "Jan 2021 - Sep 2024"
+            },
+            "second": {
+                "title": "Junior Penetration Tester",
+                "institution": "TryHackMe",
+                "duration": "Sep 2024 - Dec 2024"
+            },
+            "third": {
+                "title": "Full Stack Developer",
+                "institution": "Odin Project",
+                "duration": "Jan 2024 - Jan 2025"
+            },
+            "fourth": {
+                "title": "Ethical Hacker",
+                "institution": "Cisco Networking Academy",
+                "duration": "Jan 2024 - Jan 2025"
+            }
+        }
+    },
+    "projects": {
+        "title": "My Projects",
+        "subtitle": "Explore My Work",
+        "items": {
+            "first": {
+                "name": "Enterprise Resource Planning (ERP) System"
+            },
+            "second": {
+                "name": "Cybersecurity Labs - Penetration Testing"
+            },
+            "third": {
+                "name": "Optimized E-commerce Websites"
+            },
+            "fourth": {
+                "name": "Portfolio Website - Developer Portfolio"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Me",
+        "subtitle": "Get in Touch for Collaboration",
+        "block_title": "Let's Talk",
+        "block_link": "Send a Message",
+        "project_title": "Share Your Project Details",
+        "button": "Contact Me"
+    }
+}

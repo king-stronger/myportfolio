@@ -1,0 +1,133 @@
+{
+    "title": "Stronger - Développeur Full Stack & Expert en Cybersécurité",
+    "header": {
+        "nav": {
+            "home": "Accueil",
+            "skills": "Compétences",
+            "qualification": "Qualifications",
+            "services": "Services",
+            "projects": "Projets",
+            "contact": "Contact",
+            "language": "Anglais",
+            "language_french": "Français"
+        }
+    },
+    "home": {
+        "title": "Bienvenue sur Mon Portfolio",
+        "subtitle": "À Propos de Moi",
+        "experience": "Expérience",
+        "experience_duration": "6 mois",
+        "completed": "Terminés",
+        "projects": "5 Projets Livrés",
+        "support": "Disponibilité",
+        "support_availability": "24/7",
+        "bio": "Je suis un développeur passionné et pentester, avec une passion pour créer et déconstruire des systèmes. Mon parcours a commencé tôt : fasciné par les jeux vidéo, j'ai appris à coder après avoir découvert un projet Dragon Ball abandonné au collège. Depuis, j'ai exploré divers domaines, de Java à Unity, et après le lycée, je me suis consacré au développement et à la cybersécurité. J'adore apprendre et approfondir des sujets, souvent en regardant des tutoriels intensément pour les maîtriser. L'une de mes plus grandes réussites est la création d'un micro-framework, marquant mon passage de codeur à développeur. J'aime le développement backend pour ses défis architecturaux et la cybersécurité pour l'adrénaline du hacking. En dehors de la tech, je suis fan de jeux vidéo, de manga, d'échecs et de basketball. Guidé par la curiosité et de grandes ambitions, je vise à créer des jeux mémorables et à développer des systèmes ayant un impact réel en Afrique.",
+        "download_cv": "Télécharger Mon CV",
+        "contact_me": "Contactez-Moi"
+    },
+    "skills": {
+        "title": "Mes Compétences Techniques",
+        "subtitle": "Développement Fullstack & Cybersécurité",
+        "frontend": {
+            "title": "Développement Frontend"
+        },
+        "backend": {
+            "title": "Développement Backend"
+        },
+        "cybersecurity": {
+            "title": "Cybersécurité"
+        }
+    },
+    "services": {
+        "title": "Mes Services Professionnels",
+        "subtitle": "Ce Que Je Propose",
+        "button": "En Savoir Plus",
+        "list": {
+            "ui": {
+                "title": "Design UI/UX & Développement Frontend",
+                "description": "Créer des interfaces utilisateurs attractives et optimisées pour une expérience fluide.",
+                "details": {
+                    "first": "Concevoir des sites responsives adaptés à toutes les tailles d'écran",
+                    "second": "Développer des applications web dynamiques avec React ou Svelte",
+                    "third": "Utiliser Git pour le contrôle de version et le développement collaboratif",
+                    "fourth": "Optimiser les sites pour des temps de chargement rapides",
+                    "fifth": "Appliquer des pratiques UX/UI centrées sur l'utilisateur pour une navigation intuitive"
+                }
+            },
+            "backend": {
+                "title": "Développement Backend & Intégration API",
+                "description": "Créer des systèmes backend sécurisés et évolutifs pour des applications modernes.",
+                "details": {
+                    "first": "Construire des API RESTful et des endpoints GraphQL pour une gestion efficace des données",
+                    "second": "Développer des systèmes backend avec Node.js, Express, et Laravel",
+                    "third": "Gérer des bases de données (SQL, PostgreSQL, MySQL) pour un stockage de données optimisé",
+                    "fourth": "Mettre en œuvre une authentification et une autorisation sécurisées",
+                    "fifth": "Déployer des solutions cloud évolutives avec Docker et Kubernetes"
+                }
+            },
+            "security": {
+                "title": "Tests de Sécurité Systèmes et Applications",
+                "description": "Protéger vos applications et systèmes contre les menaces cybernétiques.",
+                "details": {
+                    "first": "Réaliser des audits de sécurité approfondis pour identifier les vulnérabilités",
+                    "second": "Effectuer des tests d'intrusion sur les applications web et les réseaux",
+                    "third": "Sécuriser l'infrastructure critique et les points d'entrée",
+                    "fourth": "Analyser les risques liés aux données et implémenter des solutions sécurisées",
+                    "fifth": "Tester les applications contre les attaques par force brute et les exploits de sécurité"
+                }
+            }
+        }
+    },
+    "qualification": {
+        "title": "Mes Qualifications",
+        "subtitle": "Éducation & Certifications",
+        "timeline": {
+            "first": {
+                "title": "Développeur Full Stack",
+                "institution": "FreeCodeCamp",
+                "duration": "Jan 2021 - Sep 2024"
+            },
+            "second": {
+                "title": "Junior Penetration Tester",
+                "institution": "TryHackMe",
+                "duration": "Sep 2024 - Déc 2024"
+            },
+            "third": {
+                "title": "Développeur Full Stack",
+                "institution": "Odin Project",
+                "duration": "Jan 2024 - Jan 2025"
+            },
+            "fourth": {
+                "title": "Hacker Éthique",
+                "institution": "Cisco Networking Academy",
+                "duration": "Jan 2024 - Jan 2025"
+            }
+        }
+    },
+    "projects": {
+        "title": "Mes Projets",
+        "subtitle": "Découvrez Mon Travail",
+        "items": {
+            "first": {
+                "name": "Système de Planification des Ressources d'Entreprise (ERP)"
+            },
+            "second": {
+                "name": "Laboratoires de Cybersécurité - Tests d'Intrusion"
+            },
+            "third": {
+                "name": "Sites E-commerce Optimisés"
+            },
+            "fourth": {
+                "name": "Portfolio Développeur"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contactez-Moi",
+        "subtitle": "Entrons en Contact",
+        "block_title": "Discutons",
+        "block_link": "Envoyer un Message",
+        "project_title": "Partagez les Détails de Votre Projet",
+        "button": "Contactez-Moi"
+    }
+}

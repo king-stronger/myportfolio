@@ -144,8 +144,9 @@ input, textarea, select {
     .text-xxl {
         font-size: var(--fs-700);
     }
-
+    
     .text-xl {
+        max-width: 16ch;
         font-size: var(--fs-600);
     }
 
@@ -258,6 +259,28 @@ input, textarea, select {
     scale: 1.3;
     color: var(--accent-color);
 }
+
+.popover {
+    position: relative;
+}
+
+.language-menu {
+    inset: auto;
+    translate: -50%;
+    border: none;
+    padding: 1.5rem;
+    position: absolute;
+    border-radius: .5em;
+    margin-block-start: .5em;
+    background: var(--container-color);
+    box-shadow: 0 0 2px 0 var(--text-color);
+}
+
+.language-menu:popover-open {
+   display: flex;
+   row-gap: 1em;
+   flex-direction: column;
+}
 /***************************************** HEADER ***********************************************/
 
 
@@ -274,6 +297,7 @@ input, textarea, select {
     --grid-repeat: 3;
     --flex-gap: 1rem;
     --flex-justify: end;
+    --grid-align-items: stretch;
 }
 
 .home-content article {
@@ -456,6 +480,7 @@ input, textarea, select {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .project img {
