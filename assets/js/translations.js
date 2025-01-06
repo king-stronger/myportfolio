@@ -9,8 +9,8 @@ const translations = {
  * @returns {void}
  */
 async function loadTranslations (){
-    translations.en = await fetch("../assets/translations/en.json").then(res => res.json());
-    translations.fr = await fetch("../assets/translations/fr.json").then(res => res.json()); 
+    translations.en = await fetch("/assets/translations/en.json").then(res => res.json());
+    translations.fr = await fetch("/assets/translations/fr.json").then(res => res.json()); 
 }
 
 /**
