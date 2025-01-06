@@ -12,3 +12,4 @@ closeModals.forEach(button => {
         button.parentNode.close();
     });
 });
+
