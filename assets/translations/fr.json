@@ -109,13 +109,13 @@
         "subtitle": "Découvrez Mon Travail",
         "items": {
             "first": {
-                "name": "Système de Planification des Ressources d'Entreprise (ERP)"
+                "name": "Système de Planification des Ressources d'Entreprise (ERP) (En cours)"
             },
             "second": {
-                "name": "Laboratoires de Cybersécurité - Tests d'Intrusion"
+                "name": "Laboratoires de Cybersécurité"
             },
             "third": {
-                "name": "Sites E-commerce Optimisés"
+                "name": "Micro-framework php"
             },
             "fourth": {
                 "name": "Portfolio Développeur"
