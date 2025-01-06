@@ -266,10 +266,10 @@ input, textarea, select {
 
 .language-menu {
     inset: auto;
-    translate: -50%;
     border: none;
     padding: 1.5rem;
-    position: absolute;
+    position: fixed;
+    translate: -50%;
     border-radius: .5em;
     margin-block-start: .5em;
     background: var(--container-color);
@@ -530,6 +530,16 @@ input, textarea, select {
 /***************************************** CONTACT ***********************************************/
 
 
+.button-menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
 @media (width < 600px){
     .home-section,
     .skills-section, 
@@ -550,5 +560,13 @@ input, textarea, select {
 
     .form {
         gap: 2em;
+    }
+
+    .button-menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
     }
 }

@@ -25,23 +25,30 @@
         <header class="header flex" id="header">
             <h1 class="text-lg">Stronger</h1>
 
-            <nav class="nav flex">
-                <a href="#home" class="nav-link" data-translate="header.nav.home">Home</a>
-                <a href="#skills" class="nav-link" data-translate="header.nav.skills">Skills</a>
-                <a href="#qualification" class="nav-link" data-translate="header.nav.qualification">Qualification</a>
-                <a href="#services" class="nav-link" data-translate="header.nav.services">Services</a>
-                <a href="#projects" class="nav-link" data-translate="header.nav.projects">Projects</a>
-                <a href="#contact" class="nav-link" data-translate="header.nav.contact">Contact</a>
+            <div class="menu">
+                <nav class="nav flex">
+                    <a href="#home" class="nav-link" data-translate="header.nav.home">Home</a>
+                    <a href="#skills" class="nav-link" data-translate="header.nav.skills">Skills</a>
+                    <a href="#qualification" class="nav-link" data-translate="header.nav.qualification">Qualification</a>
+                    <a href="#services" class="nav-link" data-translate="header.nav.services">Services</a>
+                    <a href="#projects" class="nav-link" data-translate="header.nav.projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-translate="header.nav.contact">Contact</a>
+                </nav>
+                
                 <div class="popover">
                     <button class="nav-link language-button" popovertarget="language-menu">
-                        <i class='bx bx-globe'></i>
+                        <i class='bx bx-globe text'></i>
                     </button>
                     <div popover id="language-menu" class="language-menu">
                         <button class="nav-link language-buttons" data-lang="en">English</button>
                         <button class="nav-link language-buttons" data-lang="fr">Francais</button>
                     </div>
                 </div>
-            </nav>
+                
+                <button class="button-menu nav-link">
+                    <i class='bx bx-menu-alt-right'></i>
+                </button>
+            </div>
         </header>
 
         <section class="home-section flow" id="home">
@@ -49,7 +56,7 @@
             <h3 class="text-center text-xl title" data-translate="home.subtitle">About Me</h3>
             <div class="grid">
                 <div class="home-img">
-                    <img src="assets/images/profile3.jpg" alt="" class="rounded-img">
+                    <img src="assets/images/profile3.webp" alt="" class="rounded-img">
                 </div>
                 <div class="home-content flow">
                     <div class="grid">
@@ -156,27 +163,27 @@
                     <h2 class="text-center text-md" data-translate="skills.cybersecurity.title">Cybersecurity</h2>
                     <ul class="skills-list grid">
                         <li class="skill">
-                            <img src="assets/images/cyber/nmap.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/nmap.webp" alt="" loading="lazy">
                             <span>NMAP</span>
                         </li>
                         <li class="skill">
-                            <img src="assets/images/cyber/metasploit.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/metasploit.webp" alt="" loading="lazy">
                             <span>Metasploit</span>
                         </li>
                         <li class="skill">
-                            <img src="assets/images/cyber/burp.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/burp.webp" alt="" loading="lazy">
                             <span>Burp Suite</span>
                         </li>
                         <li class="skill">
-                            <img src="assets/images/cyber/wireshark.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/wireshark.webp" alt="" loading="lazy">
                             <span>wireshark</span>
                         </li>
                         <li class="skill">
-                            <img src="assets/images/cyber/openvas.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/openvas.webp" alt="" loading="lazy">
                             <span>OpenVas</span>
                         </li>
                         <li class="skill">
-                            <img src="assets/images/cyber/hydra.png" alt="loading="lazy"">
+                            <img src="assets/images/cyber/hydra.webp" alt="" loading="lazy">
                             <span>Hydra</span>
                         </li>
                     </ul>
@@ -311,7 +318,7 @@
             <h2 class="text-center text-xl title" data-translate="projects.subtitle">Recents Works</h2>
             <div class="grid">
                 <article class="project">
-                    <img src="assets/images/projects/work.png" alt="" loading="lazy">
+                    <img src="assets/images/projects/work.webp" alt="" loading="lazy">
                     <span data-translate="projects.items.first.name">Micro-framework PHP</span>
                     <a class="link">
                         Demo
@@ -320,7 +327,7 @@
                 </article>
 
                 <article class="project">
-                    <img src="assets/images/projects/work.png" alt="" loading="lazy">
+                    <img src="assets/images/projects/work.webp" alt="" loading="lazy">
                     <span data-translate="projects.items.second.name">Micro-framework PHP</span>
                     <a class="link">
                         Demo
@@ -330,7 +337,7 @@
 
 
                 <article class="project">
-                    <img src="assets/images/projects/work.png" alt="" loading="lazy">
+                    <img src="assets/images/projects/work.webp" alt="" loading="lazy">
                     <span data-translate="projects.items.third.name">Micro-framework PHP</span>
                     <a class="link">
                         Demo
@@ -340,7 +347,7 @@
 
 
                 <article class="project">
-                    <img src="assets/images/projects/work.png" alt="" loading="lazy">
+                    <img src="assets/images/projects/work.webp" alt="" loading="lazy">
                     <span data-translate="projects.items.fourth.name">Micro-framework PHP</span>
                     <a class="link">
                         Demo
@@ -399,6 +406,6 @@
     </div>
 
     <script src="assets/js/translations.js" defer></script>
-    <script src="assets/js/modals.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
