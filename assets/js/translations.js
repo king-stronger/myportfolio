@@ -4,14 +4,19 @@ const translations = {
     fr: null
 }
 
+const basePath = window.location.pathname.includes("/myportfolio/")
+    ? "/myportfolio/"
+    : "/";
+
+
 /**
  * Load the translations
  * @returns {void}
  */
-async function loadTranslations (){
+async function loadTranslations() {
     const [enData, frData] = await Promise.all([
-        fetch("assets/translations/en.json").then(res => res.json()),
-        fetch("assets/translations/fr.json").then(res => res.json())
+        fetch(`${basePath}assets/translations/en.json`).then(res => res.json()),
+        fetch(`${basePath}assets/translations/fr.json`).then(res => res.json())
     ]);
     translations.en = enData;
     translations.fr = frData;
