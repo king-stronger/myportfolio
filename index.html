@@ -15,7 +15,7 @@
         <title data-translate="title">Stronger - Full Stack Developer & Cybersecurity Expert</title>
         
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.rel='stylesheet'">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
     </head>
     
@@ -25,7 +25,7 @@
             <h1 class="text-lg">Stronger</h1>
 
             <div class="menu">
-                <nav class="nav flex">
+                <nav class="nav flex" id="nav">
                     <a href="#home" class="nav-link" data-translate="header.nav.home">Home</a>
                     <a href="#skills" class="nav-link" data-translate="header.nav.skills">Skills</a>
                     <a href="#qualification" class="nav-link" data-translate="header.nav.qualification">Qualification</a>
@@ -55,23 +55,23 @@
             <h3 class="text-center text-xl title" data-translate="home.subtitle">About Me</h3>
             <div class="grid">
                 <div class="home-img">
-                    <img src="assets/images/profile3.webp" alt="" class="rounded-img">
+                    <img src="assets/images/profile3.webp" alt="Stronger profile image" class="rounded-img">
                 </div>
                 <div class="home-content flow">
                     <div class="grid">
-                        <article class="flow">
+                        <article class="home-experience">
                             <i class='text-md text-center bx bx-medal icon'></i>
                             <span class="text-center" data-translate="home.experience" data-translate="home.experience">Experience</span>
                             <span class="text-center" data-translate="home.experience_duration" data-translate="home.experience_duration">6 months</span>
                         </article>
 
-                        <article class="flow">
+                        <article class="home-completed">
                             <i class='text-md text-center bx bx-briefcase-alt icon'></i>
                             <span class="text-center" data-translate="home.completed">Completed</span>
                             <span class="text-center" data-translate="home.projects">5 projects</span>
                         </article>
 
-                        <article class="flow">
+                        <article class="home-support">
                             <i class='text-md text-center bx bx-support icon'></i>
                             <span class="text-center" data-translate="home.support">Support</span>
                             <span class="text-center" data-translate="home.support_availability">24/24 H</span>
@@ -345,10 +345,9 @@
                 </article>
 
                 <article class="project">
-                    <img src="assets/images/projects/work.webp" loading="lazy"
-                        alt="Preview of Cybersecurity Labs project">
+                    <img src="assets/images/projects/tryhackme.svg" alt="TryHackMe" loading="lazy"/>
                     <span data-translate="projects.items.second.name">Cybersecurity Labs</span>
-                    <a class="link">
+                    <a class="link" href="https://tryhackme.com/r/p/KingStronger">
                         Demo
                         <i class='bx bx-right-arrow-alt icon'></i>
                     </a>
@@ -367,10 +366,10 @@
 
 
                 <article class="project">
-                    <img src="assets/images/projects/work.webp" loading="lazy"
+                    <img src="assets/images/projects/portfolio.webp" loading="lazy"
                         alt="Preview of Portfolio Website project">
                     <span data-translate="projects.items.fourth.name">Portfolio Website</span>
-                    <a class="link">
+                    <a class="link" href="https://github.com/king-stronger/myportfolio">
                         Demo
                         <i class='bx bx-right-arrow-alt icon'></i>
                     </a>

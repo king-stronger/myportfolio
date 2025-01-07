@@ -246,6 +246,21 @@ input, textarea, select {
     box-shadow: 0px 0px 5px 1px #eee;
 }
 
+
+.button-menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.nav-desktop {
+    display: none;
+}
+
 .nav {
     --flex-gap: 2rem;
 }
@@ -309,6 +324,13 @@ input, textarea, select {
 
 .home-content article > * {
     display: block;
+}
+
+.home-experience, .home-completed, .home-support {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /***************************************** HOME ***********************************************/
 
@@ -485,6 +507,12 @@ input, textarea, select {
 
 .project img {
     border-radius: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.project:nth-of-type(4) img {
+    object-fit: cover;
+    object-position: top;
 }
 /***************************************** PROJECTS ***********************************************/
 
@@ -529,18 +557,7 @@ input, textarea, select {
 }
 /***************************************** CONTACT ***********************************************/
 
-
-.button-menu {
-    display: none;
-}
-
-.menu {
-    display: flex;
-    gap: 1rem;
-    align-items: stretch;
-}
-
-@media (width < 600px){
+@media (width < 900px){
     .home-section,
     .skills-section, 
     .contact-section {
@@ -562,11 +579,39 @@ input, textarea, select {
         gap: 2em;
     }
 
+    #header {
+        z-index: 1;
+        padding: 1rem;
+        position: fixed;
+        inset: auto 0 0 0;
+        box-shadow: 0 0 3px 0 white;
+        background-color: var(--background-color);
+    }
+
     .button-menu {
         display: block;
     }
 
     .nav {
         display: none;
+    }
+
+    .nav-mobile {
+        position: fixed;
+        inset: auto 1rem 10% 1rem;
+        background-color: var(--container-color);
+
+        display: grid;
+        gap: 1rem 1rem;
+        padding: 2rem;
+        border-radius: 1em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .nav-desktop .nav-link {
+        text-align: center;
+        padding-block: 3rem;
+        border-radius: 1rem;
+        background-color: var(--background-color);
     }
 }
