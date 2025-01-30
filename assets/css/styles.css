@@ -605,7 +605,7 @@ input, textarea, select {
 
     .nav-mobile {
         position: fixed;
-        inset: auto 1rem 8% 1rem;
+        inset: auto 1rem 9% 1rem;
         background-color: var(--container-color);
 
         display: grid;
@@ -633,5 +633,17 @@ input, textarea, select {
     .projects-section {
         --grid-repeat: 1;
         --grid-content-size: 1fr;
+    }
+
+
+    .nav-mobile {
+        gap: .5rem .5rem;
+        padding: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .nav-mobile .nav-link {
+        padding-block: 2rem;
     }
 }
