@@ -66,6 +66,7 @@
 }
 
 body {
+    overflow-x: hidden;
     min-height: 100dvh;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background-color);
@@ -619,5 +620,18 @@ input, textarea, select {
         padding-block: 3rem;
         border-radius: 1rem;
         background-color: var(--background-color);
+    }
+}
+
+@media (width < 600px){
+    .home-content {
+        --grid-repeat: 1;
+    }
+    
+
+    .services-section,
+    .projects-section {
+        --grid-repeat: 1;
+        --grid-content-size: 1fr;
     }
 }
