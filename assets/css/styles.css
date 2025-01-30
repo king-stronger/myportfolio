@@ -271,7 +271,7 @@ input, textarea, select {
 }
 
 .nav-link:hover {
-    scale: 1.3;
+    scale: 1.15;
     color: var(--accent-color);
 }
 
@@ -588,6 +588,12 @@ input, textarea, select {
         background-color: var(--background-color);
     }
 
+    .language-menu {
+        inset: auto;
+        translate: -100% -130%;
+        margin-block-start: .5em;
+    }
+
     .button-menu {
         display: block;
     }
@@ -598,7 +604,7 @@ input, textarea, select {
 
     .nav-mobile {
         position: fixed;
-        inset: auto 1rem 10% 1rem;
+        inset: auto 1rem 8% 1rem;
         background-color: var(--container-color);
 
         display: grid;
@@ -608,7 +614,7 @@ input, textarea, select {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .nav-desktop .nav-link {
+    .nav-mobile .nav-link {
         text-align: center;
         padding-block: 3rem;
         border-radius: 1rem;
