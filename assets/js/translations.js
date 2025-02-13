@@ -8,6 +8,19 @@ const basePath = window.location.pathname.includes("/myportfolio/")
     ? "/myportfolio/"
     : "/";
 
+/**
+ * Add an event listener to the language button to to toggle the language
+ */
+const languageImage = document.getElementById("language-image");
+const languageButton = document.getElementById("language-button");
+
+languageButton.addEventListener("click", (e) => {
+    if(languageImage.getAttribute("src") === "assets/images/language/english.svg"){
+        languageImage.setAttribute("src", "assets/images/language/french.svg");
+    } else {
+        languageImage.setAttribute("src", "assets/images/language/english.svg");
+    } 
+});
 
 /**
  * Load the translations
@@ -49,19 +62,25 @@ function getTranslation(keys, translations, lang) {
     return keys.reduce((acc, key) => acc[key], translations[lang] || {});
 }
 
-const languageButtons = document.querySelectorAll(".language-buttons");
 
 document.addEventListener("DOMContentLoaded", async () => {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
     await loadTranslations();
 
-    if(navigator.language.startsWith('fr')){
-        changeLanguage('fr');
+    if (savedLanguage === 'fr') {
+        changeLanguage(savedLanguage);
+        languageButton.setAttribute("data-lang", "en");
+        languageImage.setAttribute("src", `assets/images/language/english.svg`);
     }
+    
 
-    languageButtons.forEach(languageButton => {
-        languageButton.addEventListener('click', (event) => {
-            let lang = event.target.getAttribute("data-lang");
-            changeLanguage(lang);
-        });
+    languageButton.addEventListener('click', (event) => {
+        let lang = languageButton.getAttribute("data-lang");
+
+        changeLanguage(lang);
+
+        languageButton.setAttribute("data-lang", `${lang === 'en' ? 'fr' : 'en'}`);
+        languageImage.setAttribute("src", `assets/images/language/${lang === 'en' ? 'french' : 'english'}.svg`);
     });
 });
