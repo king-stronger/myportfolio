@@ -7,9 +7,7 @@
             "qualification": "Qualifications",
             "services": "Services",
             "projects": "Projets",
-            "contact": "Contact",
-            "language": "Anglais",
-            "language_french": "Français"
+            "contact": "Contact"
         }
     },
     "home": {
@@ -18,7 +16,7 @@
         "experience": "Expérience",
         "experience_duration": "1 an",
         "completed": "Terminés",
-        "projects": "5 Projets Livrés",
+        "projects": "10 Projets",
         "support": "Disponibilité",
         "support_availability": "24/7",
         "bio": "Je suis un développeur et pentester passionné qui aime construire et déconstruire. Mon parcours a commencé au collège, où ma fascination pour les jeux vidéo m'a poussé à apprendre la programmation en découvrant un projet abandonné sur Dragon Ball. Depuis, j'ai exploré Java, Unity, et je me suis pleinement consacré au développement et à la cybersécurité après le lycée. J'aime maîtriser de nouveaux sujets et j'ai créé un micro-framework qui a marqué mon passage de programmeur à développeur. J'apprécie le développement backend pour ses défis, et le frontend pour le plaisir de reproduire des designs. La cybersécurité m'excite pour l'adrénaline du hacking. En dehors de la tech, je suis un grand fan de jeux vidéo, manga, échecs et basket. Motivé par la curiosité, je vise à créer des jeux et des systèmes impactants pour l'Afrique.",
