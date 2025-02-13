@@ -275,6 +275,10 @@ input, textarea, select {
     scale: 1.15;
     color: var(--accent-color);
 }
+
+#language-image {
+    width: 25px;
+}
 /***************************************** HEADER ***********************************************/
 
 
