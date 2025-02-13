@@ -18,17 +18,8 @@ menuButton.addEventListener('click', () => {
 });
 
 /**
- * Add an event listener to the language button to to toggle the language menu
+ * Add an event listener to the language button to to toggle the language
  */
-const languageButton = document.querySelector('.language-button');
-const languageMenu = document.querySelector('#language-menu');
-
-languageButton.addEventListener('click', () => {
-    const rect = languageButton.getBoundingClientRect();
-
-    languageMenu.style.top = `${rect.bottom}px`;
-    languageMenu.style.left = `${rect.left + rect.width / 2}px`;
-});
 
 
 /**

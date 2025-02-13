@@ -275,28 +275,6 @@ input, textarea, select {
     scale: 1.15;
     color: var(--accent-color);
 }
-
-.popover {
-    position: relative;
-}
-
-.language-menu {
-    inset: auto;
-    border: none;
-    padding: 1.5rem;
-    position: fixed;
-    translate: -50%;
-    border-radius: .5em;
-    margin-block-start: .5em;
-    background: var(--container-color);
-    box-shadow: 0 0 2px 0 var(--text-color);
-}
-
-.language-menu:popover-open {
-   display: flex;
-   row-gap: 1em;
-   flex-direction: column;
-}
 /***************************************** HEADER ***********************************************/
 
 
