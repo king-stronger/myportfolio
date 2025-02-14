@@ -456,19 +456,21 @@ input, textarea, select {
 }
 
 .timeline-line {
-    width: 3px;
+    inset: 0;
+    width: 4px;
     position: absolute;
     border-radius: .5em;
-    inset: 0 50% 0 auto;
+    margin-inline: auto;
     background: var(--primary-color);
 }
 
 .timeline-point {
     width: 18px;
+    inset: auto 0;
     aspect-ratio: 1/1;
     border-radius: 50%;
     position: absolute;
-    inset: auto 48.55% auto auto;
+    margin-inline: auto;
     background-color: var(--primary-color);
 }
 
