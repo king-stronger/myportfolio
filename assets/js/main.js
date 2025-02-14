@@ -2,19 +2,16 @@
 /**
  * Add an event listener to the menu button to toggle the menu on mobile
  */
-const menuButton = document.querySelector('.button-menu');
-const menu = document.getElementById('nav');
+const menu = document.getElementById('menu');
+const openMenuButton = document.querySelector('.button-menu');
+const closeMenuButton = document.querySelector('.close-menu');
 
-menuButton.addEventListener('click', () => {
-    let navMobile = menu.classList.contains('nav-mobile');
+openMenuButton.addEventListener('click', () => {
+    menu.classList.add("show");
+});
 
-    if(navMobile){
-        menu.classList.add('nav');
-        menu.classList.remove('nav-mobile');
-    } else {
-        menu.classList.remove('nav');
-        menu.classList.add('nav-mobile');
-    }
+closeMenuButton.addEventListener('click', () => {
+    menu.classList.remove("show");
 });
 
 

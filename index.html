@@ -23,27 +23,50 @@
 <body>
     <div id="app">
         <header class="header" id="header">
-            <div class="container flex">
-                <h1 class="text-lg">Stronger</h1>
+            <div class="container">
+                <h1 class="text-lg brand">Stronger</h1>
     
-                <div class="menu">
-                    <nav class="nav flex" id="nav">
-                        <a href="#home" class="nav-link" data-translate="header.nav.home">Home</a>
-                        <a href="#skills" class="nav-link" data-translate="header.nav.skills">Skills</a>
-                        <a href="#qualification" class="nav-link" data-translate="header.nav.qualification">Qualification</a>
-                        <a href="#services" class="nav-link" data-translate="header.nav.services">Services</a>
-                        <a href="#projects" class="nav-link" data-translate="header.nav.projects">Projects</a>
-                        <a href="#contact" class="nav-link" data-translate="header.nav.contact">Contact</a>
-                    </nav>
-                    
-                    <button class="language-button" id="language-button" data-lang="fr">
-                        <img src="assets/images/language/french.svg" alt="French flag button" id="language-image">
-                    </button>
-                    
-                    <button class="button-menu nav-link">
-                        <i class='bx bx-menu-alt-right'></i>
-                    </button>
-                </div>
+                <nav class="nav" id="nav">
+                    <ul class="menu flex" id="menu">
+                        <li class="nav-item">
+                            <i class="bx bx-home-alt nav-icon"></i>
+                            <a href="#home" class="nav-link" data-translate="header.nav.home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bx bx-cog nav-icon"></i>
+                            <a href="#skills" class="nav-link" data-translate="header.nav.skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bx bx-award nav-icon"></i>
+                            <a href="#qualification" class="nav-link" data-translate="header.nav.qualification">Qualification</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bx bx-brain nav-icon"></i>
+                            <a href="#services" class="nav-link" data-translate="header.nav.services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bx bx-task nav-icon"></i>
+                            <a href="#projects" class="nav-link" data-translate="header.nav.projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bx bxs-contact nav-icon"></i>
+                            <a href="#contact" class="nav-link" data-translate="header.nav.contact">Contact</a>
+                        </li>
+                        <li>
+                            <button class="close-menu">
+                                <i class="bx bx-x nav-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="language-button" id="language-button" data-lang="fr">
+                    <img src="assets/images/language/french.svg" alt="French flag button" id="language-image">
+                </button>
+                
+                <button class="button-menu">
+                    <i class='bx bx-menu-alt-right nav-icon'></i>
+                </button>
             </div>
         </header>
 

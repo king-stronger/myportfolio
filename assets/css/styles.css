@@ -246,39 +246,42 @@ input, textarea, select {
 
 
 /***************************************** HEADER ***********************************************/
-#header {
+.header {
     z-index: 1;
-    padding: 1rem;
     position: sticky;
     inset: 0 0 auto 0;
+    padding-block: 1rem;
     background-color: var(--container-color);
 }
 
-.button-menu {
-    display: none;
+.header .container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+}
+
+.header .brand {
+    margin-right: auto;
 }
 
 .menu {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: stretch;
 }
 
-.nav-desktop {
+:has(> .close-menu), .button-menu, .nav-item .nav-icon {
     display: none;
 }
 
-.nav {
-    --flex-gap: 2rem;
-}
-
-.nav-link {
+.nav-item > * {
     font-size: var(--fs-300);
     color: var(--primary-color);
     transition: scale 200ms ease;
 }
 
-.nav-link:active {
+.nav-item:active > * {
     scale: 1.2;
     color: var(--accent-color);
 }
@@ -296,9 +299,13 @@ input, textarea, select {
 }
 
 @media (width > 900px){
-    .nav-link:hover {
+    .nav-item:hover > * {
         scale: 1.2;
         color: var(--accent-color);
+    }
+
+    .nav-link {
+        display: inline-flex;
     }
 
     #language:hover {
@@ -589,14 +596,27 @@ input, textarea, select {
         gap: 2em;
     }
 
-    #header {
-        z-index: 1;
-        padding: 1rem;
+    .header {
         position: fixed;
         inset: auto 0 0 0;
-        box-shadow: 0 0 3px 0 white;
-        background-color: var(--background-color);
+        background-color: var(--container-color);
     }
+
+    .nav .nav-icon {
+        display: inline-flex;
+    }
+
+    :is(.close-menu, .button-menu) > .nav-icon {
+        font-size: var(--fs-300);
+        color: var(--primary-color);
+        transition: scale 200ms ease;
+    }
+    
+    :is(.close-menu, .button-menu):active > .nav-icon{
+        scale: 1.2;
+        color: var(--accent-color);
+    }
+    
 
     .language-menu {
         inset: auto;
@@ -608,13 +628,11 @@ input, textarea, select {
         display: block;
     }
 
-    .nav {
-        display: none;
-    }
-
-    .nav-mobile {
+    .menu {
         position: fixed;
-        inset: auto 1rem 9% 1rem;
+        inset: auto 0 0 0;
+        translate: 0 110%;
+        transition: translate 300ms ease;
         background-color: var(--container-color);
 
         display: grid;
@@ -623,36 +641,47 @@ input, textarea, select {
         border-radius: 1em;
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .nav-mobile .nav-link {
-        text-align: center;
-        padding-block: 3rem;
+
+    .nav-item {
+        gap: .5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
         border-radius: 1rem;
+        padding-block: 2rem;
         background-color: var(--background-color);
+    }
+
+    :has(> .close-menu){
+        display: flex;
+        justify-content: end;
+
+        grid-column: span 3;
+    }
+
+    .menu.show {
+        translate: 0 0;
     }
 }
 
 @media (width < 600px){
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    :has(> .close-menu){
+        grid-column: span 2;
+    }
+
     .home-content {
         --grid-repeat: 1;
-    }
-    
+    }   
 
     .services-section .container,
     .projects-section .container {
         --grid-repeat: 1;
         --grid-content-size: 1fr;
-    }
-
-
-    .nav-mobile {
-        gap: .5rem .5rem;
-        padding: 1rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .nav-mobile .nav-link {
-        padding-block: 2rem;
     }
 }
