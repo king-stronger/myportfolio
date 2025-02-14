@@ -242,6 +242,10 @@ input, textarea, select {
 #app > section {
     margin-block: 10rem;
 }
+
+#app > section:first-of-type {
+    margin-top: 5rem;
+}
 /***************************************** APP ***********************************************/
 
 
