@@ -692,6 +692,7 @@ input, textarea, select {
     }
 
     .services-section .container {
-        --grid-gap: 1rem;
+        --grid-repeat: 1;
+        --grid-content-size: 1fr;
     }
 }
