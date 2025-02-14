@@ -228,13 +228,16 @@ input, textarea, select {
 /***************************************** APP ***********************************************/
 #app {
     display: grid;
-    grid-template-columns: 1fr min(1200px, 100% - 3em) 1fr;
-
-    > * {
-        grid-column: 2 / 3;
-    }
 }
 
+#app > * {
+    display: grid;
+    grid-template-columns: 1fr min(1200px, 100% - 3em) 1fr;
+}
+
+.container {
+    grid-column: 2 / 3;
+}
 
 #app > section {
     margin-block: 10rem;
@@ -248,13 +251,8 @@ input, textarea, select {
     padding: 1rem;
     position: sticky;
     inset: 0 0 auto 0;
-    background-color: var(--background-color);
+    background-color: var(--container-color);
 }
-
-.header-shadow {
-    box-shadow: 0px 0px 5px 1px #eee;
-}
-
 
 .button-menu {
     display: none;
@@ -311,7 +309,7 @@ input, textarea, select {
 
 
 /***************************************** HOME ***********************************************/
-.home-section {
+.home-section .container {
     --grid-gap: 5rem;
     --grid-repeat: 2;
     --grid-align-items: center;
@@ -348,7 +346,7 @@ input, textarea, select {
 
 
 /***************************************** SKILLS ***********************************************/
-.skills-section {
+.skills-section .container {
     --grid-repeat: 2;
     --grid-gap: 5rem;
     --grid-content-size: 450px;
@@ -385,7 +383,7 @@ input, textarea, select {
 
 
 /***************************************** SERVICES ***********************************************/
-.services-section {
+.services-section .container {
     --grid-gap: 3rem;
     --grid-repeat: 3;
     --grid-content-size: 250px;
@@ -497,7 +495,7 @@ input, textarea, select {
 
 
 /***************************************** PROJECTS ***********************************************/
-.projects-section {
+.projects-section .container {
     --grid-gap: 3rem;
     --grid-repeat: 4;
 }
@@ -529,7 +527,7 @@ input, textarea, select {
 
 
 /***************************************** CONTACT ***********************************************/
-.contact-section {
+.contact-section .container {
     --grid-repeat: 2;
     --grid-gap: 5rem;
     --grid-content-size: 400px;
@@ -569,15 +567,15 @@ input, textarea, select {
 /***************************************** CONTACT ***********************************************/
 
 @media (width < 900px){
-    .home-section,
-    .skills-section, 
-    .contact-section {
+    .home-section .container,
+    .skills-section .container, 
+    .contact-section .container {
         --grid-repeat: 1;
         --grid-content-size: 1fr;
     }
 
-    .services-section,
-    .projects-section {
+    .services-section .container,
+    .projects-section .container {
         --grid-repeat: 2;
         --grid-content-size: 1fr;
     }
@@ -639,8 +637,8 @@ input, textarea, select {
     }
     
 
-    .services-section,
-    .projects-section {
+    .services-section .container,
+    .projects-section .container {
         --grid-repeat: 1;
         --grid-content-size: 1fr;
     }
