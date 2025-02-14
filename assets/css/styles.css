@@ -422,16 +422,15 @@ input, textarea, select {
     border: none;
     min-height: 400px;
     border-radius: 1em;
-    background: var(--container-color);
     margin-block: auto;
     margin-inline: auto;
     width: min(65ch, 100 - 4em);
-    box-shadow: 0 0 1px 1px gray;
+    background: var(--container-color);
 }
 
 :modal::backdrop {
-    opacity: .7;
-    background: #222;
+    opacity: 0.7;
+    background: var(--background-color);
 }
 
 .services-list > * + *{
