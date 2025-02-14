@@ -68,6 +68,9 @@
 body {
     overflow-x: hidden;
     min-height: 100dvh;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background-color);
 }
