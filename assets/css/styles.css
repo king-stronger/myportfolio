@@ -188,24 +188,32 @@ input, textarea, select {
         background: var(--primary-color);
     }
 
-    .button:hover {
-        scale: 1.1;
+    .button:active {
+        scale: 1.2;
         background-color: var(--accent-color);
     }
 
-    .link {
-        cursor: pointer;
-        width: fit-content;
+    .link, .icon {
+        display: inline-flex;
         color: var(--primary-color);
-    }
-    
-    .icon {
-        color: var(--primary-color);
+        transition: scale 200ms ease;
     }
 
-    .link:hover, .link:hover .icon {
+    .link:active {
         scale: 1.2;
         color: var(--accent-color);
+    }
+
+    @media (width > 900px){
+        .button:hover {
+            scale: 1.2;
+            background-color: var(--accent-color);
+        }
+
+        .link:hover {
+            scale: 1.2;
+            color: var(--accent-color);
+        }
     }
 
     .rounded-img {
@@ -269,15 +277,35 @@ input, textarea, select {
 .nav-link {
     font-size: var(--fs-300);
     color: var(--primary-color);
+    transition: scale 200ms ease;
 }
 
-.nav-link:hover {
-    scale: 1.15;
+.nav-link:active {
+    scale: 1.2;
     color: var(--accent-color);
+}
+
+#language {
+    transition: scale 200ms ease;
+}
+
+#language:active {
+    scale: 1.2;
 }
 
 #language-image {
     width: 25px;
+}
+
+@media (width > 900px){
+    .nav-link:hover {
+        scale: 1.2;
+        color: var(--accent-color);
+    }
+
+    #language:hover {
+        scale: 1.2;
+    } 
 }
 /***************************************** HEADER ***********************************************/
 
