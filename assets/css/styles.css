@@ -683,10 +683,11 @@ input, textarea, select {
         --grid-gap: 2rem;
     }
     
-
-    .services-section .container,
     .projects-section .container {
-        --grid-repeat: 1;
-        --grid-content-size: 1fr;
+        --grid-gap: 1rem;
+    }
+
+    .services-section .container {
+        --grid-gap: 1rem;
     }
 }
