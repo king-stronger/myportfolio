@@ -62,6 +62,15 @@ function getTranslation(keys, translations, lang) {
     return keys.reduce((acc, key) => acc[key], translations[lang] || {});
 }
 
+function changeCV(lang){
+    const cv = document.getElementById("cv-button");
+
+    if(lang === "fr"){
+        cv.setAttribute("href", "/assets/cv-fr.docx")
+    } else {
+        cv.setAttribute("href", "/assets/cv-en.docx")
+    }
+}
 
 document.addEventListener("DOMContentLoaded", async () => {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
@@ -72,6 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         changeLanguage(savedLanguage);
         languageButton.setAttribute("data-lang", "en");
         languageImage.setAttribute("src", `assets/images/language/english.svg`);
+        changeCV(savedLanguage);
     }
     
 
@@ -82,5 +92,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         languageButton.setAttribute("data-lang", `${lang === 'en' ? 'fr' : 'en'}`);
         languageImage.setAttribute("src", `assets/images/language/${lang === 'en' ? 'french' : 'english'}.svg`);
+        
+        changeCV(lang);
     });
 });

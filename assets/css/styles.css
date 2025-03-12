@@ -684,6 +684,7 @@ input, textarea, select {
 
     .home-content {
         --grid-repeat: 1;
+        --flex-justify: center;
     }   
 
     .skills-list {
