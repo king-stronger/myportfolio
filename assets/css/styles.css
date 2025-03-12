@@ -661,7 +661,7 @@ input, textarea, select {
         background-color: var(--background-color);
     }
 
-    .nav-icon, .close-menu .nav-icon {
+    .nav-icon, :is(.close-menu, .button-menu) .nav-icon {
         font-size: var(--fs-500);
     }
 
