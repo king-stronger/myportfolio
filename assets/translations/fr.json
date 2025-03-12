@@ -14,7 +14,7 @@
         "title": "Bienvenue sur Mon Portfolio",
         "subtitle": "À Propos de Moi",
         "experience": "Expérience",
-        "experience_duration": "1 an",
+        "experience_duration": "2 ans",
         "completed": "Terminés",
         "projects": "10 Projets",
         "support": "Disponibilité",
@@ -42,36 +42,33 @@
         "button": "En Savoir Plus",
         "list": {
             "ui": {
-                "title": "Design UI/UX & Développement Frontend",
-                "description": "Créer des interfaces utilisateurs attractives et optimisées pour une expérience fluide.",
+                "title": "Développement et Optimisation Frontend",
+                "description": "Créer des interfaces utilisateurs attractives et optimisées pour une expérience fluide",
                 "details": {
                     "first": "Concevoir des sites responsives adaptés à toutes les tailles d'écran",
                     "second": "Développer des applications web dynamiques avec React ou Svelte",
                     "third": "Utiliser Git pour le contrôle de version et le développement collaboratif",
-                    "fourth": "Optimiser les sites pour des temps de chargement rapides",
-                    "fifth": "Appliquer des pratiques UX/UI centrées sur l'utilisateur pour une navigation intuitive"
+                    "fourth": "Optimiser les sites pour des temps de chargement rapides"
                 }
             },
             "backend": {
                 "title": "Développement Backend & Intégration API",
-                "description": "Créer des systèmes backend sécurisés et évolutifs pour des applications modernes.",
+                "description": "Créer des systèmes backend sécurisés et évolutifs pour des applications modernes",
                 "details": {
                     "first": "Construire des API RESTful et des endpoints GraphQL pour une gestion efficace des données",
                     "second": "Développer des systèmes backend avec Node.js, Express, et Laravel",
                     "third": "Gérer des bases de données (SQL, PostgreSQL, MySQL) pour un stockage de données optimisé",
-                    "fourth": "Mettre en œuvre une authentification et une autorisation sécurisées",
-                    "fifth": "Déployer des solutions cloud évolutives avec Docker et Kubernetes"
+                    "fourth": "Mettre en œuvre une authentification et une autorisation sécurisées"
                 }
             },
             "security": {
-                "title": "Tests de Sécurité Systèmes et Applications",
+                "title": "Tests de Sécurité",
                 "description": "Protéger vos applications et systèmes contre les menaces cybernétiques.",
                 "details": {
-                    "first": "Réaliser des audits de sécurité approfondis pour identifier les vulnérabilités",
-                    "second": "Effectuer des tests d'intrusion sur les applications web et les réseaux",
-                    "third": "Sécuriser l'infrastructure critique et les points d'entrée",
-                    "fourth": "Analyser les risques liés aux données et implémenter des solutions sécurisées",
-                    "fifth": "Tester les applications contre les attaques par force brute et les exploits de sécurité"
+                    "first": "Maîtrise les principes de sécurité OWASP",
+                    "second": "Réaliser des audits de sécurité approfondis pour identifier les vulnérabilités",
+                    "third": "Effectuer des tests d'intrusion sur les applications web et les réseaux",
+                    "fourth": "Tester les applications contre les attaques par force brute et les exploits de sécurité"
                 }
             }
         }
