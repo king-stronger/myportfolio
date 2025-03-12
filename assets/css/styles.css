@@ -644,9 +644,9 @@ input, textarea, select {
 
         display: grid;
         gap: 1rem 1rem;
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 1rem;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(1px, 1fr));
     }
 
     .nav-item {
@@ -657,8 +657,12 @@ input, textarea, select {
         justify-content: center;
 
         border-radius: 1rem;
-        padding-block: 2rem;
+        padding: 2rem 1rem;
         background-color: var(--background-color);
+    }
+
+    .nav-icon, .close-menu .nav-icon {
+        font-size: var(--fs-500);
     }
 
     :has(> .close-menu){
@@ -674,12 +678,8 @@ input, textarea, select {
 }
 
 @media (width < 600px){
-    .menu {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    :has(> .close-menu){
-        grid-column: span 2;
+    .nav-link {
+        font-size: var(--fs-200);
     }
 
     .home-content {
