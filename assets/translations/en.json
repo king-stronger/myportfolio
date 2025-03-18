@@ -14,7 +14,7 @@
         "title": "Welcome to My Portfolio",
         "subtitle": "About Me",
         "experience": "Experience",
-        "experience_duration": "2 year",
+        "experience_duration": "3 year",
         "completed": "Completed",
         "projects": "10 Projects",
         "support": "Support Availability",
@@ -78,14 +78,14 @@
         "subtitle": "Education & Certifications",
         "timeline": {
             "first": {
-                "title": "Full Stack Developer",
-                "institution": "FreeCodeCamp",
-                "duration": "Jan 2021 - Sep 2024"
+                "title": "Computer Science",
+                "institution": "Faculty of Science and Technology (USTTB)",
+                "duration": "Nov 2019 - oct 2022"
             },
             "second": {
-                "title": "Junior Penetration Tester",
-                "institution": "TryHackMe",
-                "duration": "Sep 2024 - Dec 2024"
+                "title": "Full Stack Developer",
+                "institution": "FreeCodeCamp",
+                "duration": "Jan 2020 - Sep 2024"
             },
             "third": {
                 "title": "Full Stack Developer",
@@ -95,7 +95,12 @@
             "fourth": {
                 "title": "Ethical Hacker",
                 "institution": "Cisco Networking Academy",
-                "duration": "Jan 2024 - Jan 2025"
+                "duration": "Jan 2024 - Mars 2025"
+            },
+            "fifth": {
+                "title": "Junior Penetration Tester",
+                "institution": "TryHackMe",
+                "duration": "Sep 2024 - Mars 2024"
             }
         }
     },
