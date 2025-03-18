@@ -150,7 +150,6 @@ input, textarea, select {
     }
     
     .text-xl {
-        max-width: 16ch;
         font-size: var(--fs-600);
     }
 
@@ -324,18 +323,24 @@ input, textarea, select {
 
 /***************************************** HOME ***********************************************/
 .home-section .container {
-    --grid-gap: 5rem;
     --grid-repeat: 2;
-    --grid-align-items: center;
+    --grid-gap: 3rem;
+}
+
+.home-img {
+    width: 100%;
 }
 
 .home-content {
-    --flow: 2rem;
     --grid-gap: 1rem;
     --grid-repeat: 3;
     --flex-gap: 1rem;
     --flex-justify: end;
     --grid-align-items: stretch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .home-content article {
@@ -347,6 +352,10 @@ input, textarea, select {
 
 .home-content article > * {
     display: block;
+}
+
+.home-bio span:nth-child(2) {
+    color: var(--primary-color);
 }
 
 .home-experience, .home-completed, .home-support {
