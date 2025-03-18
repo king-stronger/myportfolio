@@ -338,6 +338,7 @@ input, textarea, select {
     --flex-justify: end;
     --grid-align-items: stretch;
 
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -687,6 +688,11 @@ input, textarea, select {
 }
 
 @media (width < 600px){
+    .home-bio {
+        text-align: center;
+        font-size: var(--fs-500);
+    }
+
     .nav-link {
         font-size: var(--fs-200);
     }
