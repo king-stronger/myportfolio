@@ -74,8 +74,8 @@
             </div>
         </header>
 
-        <section class="home-section flow" id="home">
-            <div class="container">
+        <section class="home-section" id="home">
+            <div class="container flow">
                 <h2 class="text-center text-md" data-translate="home.title">My intro</h2>
                 <h3 class="text-center text-xl title" data-translate="home.subtitle">About Me</h3>
                 <div class="grid">
@@ -118,8 +118,8 @@
             </div>
         </section>
 
-        <section class="skills-section flow" id="skills">
-            <div class="container">
+        <section class="skills-section" id="skills">
+            <div class="container flow">
                 <h2 class="text-center text-md" data-translate="skills.title">My abilities</h2>
                 <h3 class="text-center text-xl title" data-translate="skills.subtitle">My Skills</h3>
                 <div class="grid">
@@ -234,8 +234,8 @@
             </div>
         </section>
 
-        <section class="services-section flow" id="services">
-            <div class="container">
+        <section class="services-section" id="services">
+            <div class="container flow">
                 <h2 class="text-center text-md" data-translate="services.title">My services</h2>
                 <h3 class="text-center text-xl title" data-translate="services.subtitle">What i offer</h3>
                 <div class="grid">
@@ -308,8 +308,8 @@
             </div>
         </section>
 
-        <section class="qualification-section flow" id="qualifications">
-            <div class="container">
+        <section class="qualification-section" id="qualifications">
+            <div class="container flow">
                 <h3 class="text-center text-lg" data-translate="qualification.title">Education</h3>
                 <h2 class="text-center text-xl title" data-translate="qualification.subtitle">Qualification</h2>
                 <div class="timeline-education">
@@ -363,21 +363,30 @@
             </div>
         </section>
 
-        <section class="projects-section flow" id="projects">
-            <div class="container">
+        <section class="projects-section" id="projects">
+            <div class="container flow">
                 <h3 class="text-center text-lg" data-translate="projects.title">My portfolio</h3>
                 <h2 class="text-center text-xl title" data-translate="projects.subtitle">Recents Works</h2>
+
+                <div class="filters">
+                    <button class="filter button-secondary active" data-filter="all">Tous</button>
+                    <button class="filter button-secondary" data-filter=".web">Web</button>
+                    <button class="filter button-secondary" data-filter=".pwa">PWA</button>
+                    <button class="filter button-secondary" data-filter=".api">Api</button>
+                    <button class="filter button-secondary" data-filter=".security">Security</button>
+                </div>
+
                 <div class="grid">
-                    <article class="project">
+                    <article class="project mix pwa">
                         <img src="assets/images/projects/work.webp" loading="lazy"
                             alt="Preview of an Enterprise Resource Planning (ERP) System project">
-                        <span class="text-sm" data-translate="projects.items.first.name">Enterprise Resource Planning (ERP) System (In progress)</span>
+                        <span class="text-sm" data-translate="projects.items.first.name">ERP System (In progress)</span>
                         <a class="link">
                             Demo
                         </a>
                     </article>
     
-                    <article class="project">
+                    <article class="project mix security">
                         <img src="assets/images/projects/tryhackme.svg" alt="TryHackMe" loading="lazy"/>
                         <span class="text-sm" data-translate="projects.items.second.name">Cybersecurity Labs</span>
                         <a class="link" href="https://tryhackme.com/r/p/KingStronger">
@@ -386,7 +395,7 @@
                     </article>
     
     
-                    <article class="project">
+                    <article class="project mix api">
                         <img src="assets/images/projects/work.webp" loading="lazy"
                             alt="Preview of a PHP Micro-framework project">
                         <span class="text-sm" data-translate="projects.items.third.name">Micro-framework PHP</span>
@@ -396,7 +405,7 @@
                     </article>
     
     
-                    <article class="project">
+                    <article class="project mix web">
                         <img src="assets/images/projects/portfolio.webp" loading="lazy"
                             alt="Preview of Portfolio Website project">
                         <span class="text-sm" data-translate="projects.items.fourth.name">Portfolio Website</span>
@@ -408,8 +417,8 @@
             </div>
         </section>
 
-        <section class="contact-section flow" id="contact">
-            <div class="container">
+        <section class="contact-section" id="contact">
+            <div class="container flow">
                 <h2 class="text-center text-lg" data-translate="contact.title">Contact Me</h2>
                 <h3 class="text-center text-xl title" data-translate="contact.subtitle">Get in touch</h3>
                 <div class="grid">
@@ -459,6 +468,7 @@
     </div>
 
     <script src="assets/js/translations.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3.3.1/dist/mixitup.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>

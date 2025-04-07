@@ -33,3 +33,28 @@ closeModals.forEach(button => {
     });
 });
 
+// Initialiser MixItUp
+const mixer = mixitup('#projects .grid', {
+    selectors: {
+        target: '.project'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+// Optionnel : Gestion des boutons de filtrage
+const filterButtons = document.querySelectorAll('.filter');
+
+filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        filterButtons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+
+        button.classList.add('active');
+        
+        const filter = button.getAttribute('data-filter');
+        mixer.filter(filter); // Appliquer le filtre sélectionné
+    });
+});

@@ -190,7 +190,16 @@ input, textarea, select {
         background: var(--primary-color);
     }
 
-    .button:active {
+    .button-secondary {
+        display: block;
+        width: fit-content;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+    }
+
+    :is(.button, .button-secondary):active {
         scale: 1.2;
         background-color: var(--accent-color);
     }
@@ -207,8 +216,10 @@ input, textarea, select {
     }
 
     @media (width > 900px){
-        .button:hover {
+        :is(.button, .button-secondary):hover {
             scale: 1.2;
+            border: none;
+            color: var(--background-color);
             background-color: var(--accent-color);
         }
 
@@ -547,6 +558,21 @@ input, textarea, select {
 .project:nth-of-type(4) img {
     object-fit: cover;
     object-position: top;
+}
+
+.filters {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+}
+
+.filter.active {
+    color: var(--background-color);
+    background: var(--primary-color);
 }
 /***************************************** PROJECTS ***********************************************/
 
