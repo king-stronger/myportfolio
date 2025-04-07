@@ -66,9 +66,9 @@ function changeCV(lang){
     const cv = document.getElementById("cv-button");
 
     if(lang === "fr"){
-        cv.setAttribute("href", "/assets/cv-fr.pdf")
+        cv.setAttribute("href", "assets/cv-fr.pdf")
     } else {
-        cv.setAttribute("href", "/assets/cv-en.pdf")
+        cv.setAttribute("href", "assets/cv-en.pdf")
     }
 }
 
