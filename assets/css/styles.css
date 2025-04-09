@@ -555,7 +555,7 @@ input, textarea, select {
     aspect-ratio: 1/1;
 }
 
-.project:nth-of-type(4) img {
+.project img {
     object-fit: cover;
     object-position: top;
 }
@@ -571,8 +571,9 @@ input, textarea, select {
 }
 
 .filter.active {
+    border: none;
     color: var(--background-color);
-    background: var(--primary-color);
+    background: var(--accent-color);
 }
 /***************************************** PROJECTS ***********************************************/
 
