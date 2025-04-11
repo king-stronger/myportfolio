@@ -205,7 +205,8 @@ input, textarea, select {
     }
 
     .link, .icon {
-        display: inline-flex;
+        display: inline-block;
+        transform-origin: left;
         color: var(--primary-color);
         transition: scale 200ms ease;
     }
