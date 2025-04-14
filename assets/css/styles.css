@@ -557,8 +557,8 @@ input, textarea, select {
     background: var(--container-color);
     border-radius: 1rem;
 
-    display: flex;
     gap: 1rem;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -566,6 +566,57 @@ input, textarea, select {
 .project img {
     border-radius: 1rem;
     aspect-ratio: 1/1;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+}
+
+.tag {
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    font-size: var(--fs-100);
+    color: var(--project-color);
+    border: 1px solid var(--project-color);
+}
+
+.html {
+    --project-color: hsl(330, 100%, 41%);
+}
+
+.css, .nmap {
+    --project-color: hsl(180, 100%, 41%);
+}
+
+.javascript, .d3 {
+    --project-color: hsl(60, 100%, 41%);
+}
+
+.php {
+    --project-color: hsl(270, 100%, 61%);
+}
+
+.mysql, .metasploit {
+    --project-color: hsl(210, 100%, 61%);
+}
+
+.wireshark {
+    --project-color: hsl(240, 100%, 61%);
+}
+
+.express {
+    --project-color: hsl(120, 100%, 41%);
+}
+
+.burp {
+    --project-color: hsl(30, 100%, 41%);
+}
+
+.hydra {
+    --project-color: hsl(150, 100%, 41%);
 }
 
 .filters {
@@ -582,6 +633,10 @@ input, textarea, select {
     border: none;
     color: var(--background-color);
     background: var(--accent-color);
+}
+
+.project .link {
+    align-self: start;
 }
 /***************************************** PROJECTS ***********************************************/
 
