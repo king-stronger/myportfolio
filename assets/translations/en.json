@@ -110,17 +110,36 @@
         "subtitle": "Explore My Work",
         "items": {
             "first": {
-                "name": "ERP System (in progress)"
+                "name": "Food Delivery"
             },
             "second": {
-                "name": "Cybersecurity Labs"
+                "name": "Saas Landing Page"
             },
             "third": {
-                "name": "Micro-framework php"
+                "name": "JobBoard"
             },
             "fourth": {
-                "name": "Portfolio Website"
+                "name": "Blog"
+            },
+            "fifth": {
+                "name": "Cybersecurity Labs"
+            },
+            "sixth": {
+                "name": "Micro-framework PHP"
+            },
+            "seventh": {
+                "name": "Accounting software"
+            },
+            "eighth": {
+                "name": "Farm Dashboard"
             }
+        },
+        "filter": {
+            "all": "All",
+            "first": "Web",
+            "second": "Api",
+            "third": "Tools",
+            "fourth": "Security"
         }
     },
     "contact": {

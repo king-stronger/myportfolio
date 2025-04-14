@@ -258,7 +258,7 @@
                         <dialog class="modal flow">
                             <button class="link close-modal" aria-label="close modal"><i class='bx bx-x text-md'></i></button>
                             <h2 class="text-md text-center" data-translate="services.list.ui.title">Frontend Development & Optimization</h2>
-                            <p data-translate="services.list.ui.descriptions">
+                            <p data-translate="services.list.ui.description">
                                 Create engaging user interfaces with performance optimization for a seamless user experience
                             </p>
                             <ul class="services-list">
@@ -378,18 +378,33 @@
                 <h2 class="text-center text-xl title" data-translate="projects.subtitle">Recents Works</h2>
 
                 <div class="filters">
-                    <button class="filter button-secondary active" data-filter="all">Tous</button>
-                    <button class="filter button-secondary" data-filter=".web">Web</button>
-                    <button class="filter button-secondary" data-filter=".pwa">PWA</button>
-                    <button class="filter button-secondary" data-filter=".api">Api</button>
-                    <button class="filter button-secondary" data-filter=".security">Security</button>
+                    <button class="filter button-secondary active" 
+                        data-translate="projects.filter.all" data-filter="all">
+                        All
+                    </button>
+                    <button class="filter button-secondary" 
+                        data-translate="projects.filter.first" data-filter=".web">
+                        Web
+                    </button>
+                    <button class="filter button-secondary" 
+                        data-translate="projects.filter.second" data-filter=".api">
+                        Api
+                    </button>
+                    <button class="filter button-secondary" 
+                        data-translate="projects.filter.third" data-filter=".tools">
+                        Tools
+                    </button>
+                    <button class="filter button-secondary" 
+                        data-translate="projects.filter.fourth" data-filter=".security">
+                        Security
+                    </button>
                 </div>
 
                 <div class="grid">
                     <article class="project mix web">
                         <img src="assets/images/projects/food-delivery.png" loading="lazy"
-                            alt="Preview of food delivery project">
-                        <span class="text-sm" data-translate="projects.items.fifth.name">Food Delivery</span>
+                            class="cover-image" alt="Preview of the food delivery project">
+                        <span class="text-sm" data-translate="projects.items.first.name">Food Delivery</span>
                         <a target="_blank" class="link" href="https://king-stronger.github.io/food-delivery">
                             Demo
                         </a>
@@ -397,8 +412,8 @@
 
                     <article class="project mix web">
                         <img src="assets/images/projects/task.png" loading="lazy"
-                            alt="Preview of Saas landing page project">
-                        <span class="text-sm" data-translate="projects.items.sixth.name">Saas Landing Page</span>
+                            class="cover-image"  alt="Preview of the Saas landing page project">
+                        <span class="text-sm" data-translate="projects.items.second.name">Saas Landing Page</span>
                         <a target="_blank" class="link" href="https://king-stronger.github.io/landing-page-template">
                             Demo
                         </a>
@@ -406,35 +421,52 @@
 
                     <article class="project mix web">
                         <img src="assets/images/projects/job.png" loading="lazy"
-                            alt="Preview of jobboard project">
-                        <span class="text-sm" data-translate="projects.items.sixth.name">JobBoard</span>
+                            class="cover-image"  alt="Preview of the jobboard project">
+                        <span class="text-sm" data-translate="projects.items.third.name">JobBoard</span>
                         <a target="_blank" class="link" href="https://king-stronger.github.io/employment">
                             Demo
                         </a>
                     </article>
 
-                    <article class="project mix pwa">
-                        <img src="assets/images/projects/work.webp" loading="lazy"
-                            alt="Preview of an Enterprise Resource Planning (ERP) System project">
-                        <span class="text-sm" data-translate="projects.items.first.name">ERP System (In progress)</span>
-                        <a target="_blank" class="link">
+                    <article class="project mix web">
+                        <img src="assets/images/projects/blog.png" loading="lazy"
+                            class="cover-image" alt="Preview of the blog project">
+                        <span class="text-sm" data-translate="projects.items.fourth.name">Blog</span>
+                        <a target="_blank" class="link" href="https://king-stronger.github.io/blog">
                             Demo
                         </a>
                     </article>
-    
+
                     <article class="project mix security">
                         <img src="assets/images/projects/tryhackme.svg" alt="TryHackMe" loading="lazy"/>
-                        <span class="text-sm" data-translate="projects.items.second.name">Cybersecurity Labs</span>
+                        <span class="text-sm" data-translate="projects.items.fifth.name">Cybersecurity Labs</span>
                         <a target="_blank" class="link" href="https://tryhackme.com/r/p/KingStronger">
                             Demo
                         </a>
                     </article>
     
-    
                     <article class="project mix api">
-                        <img src="assets/images/projects/work.webp" loading="lazy"
-                            alt="Preview of a PHP Micro-framework project">
-                        <span class="text-sm" data-translate="projects.items.third.name">Micro-framework PHP</span>
+                        <img src="assets/images/projects/framework.webp" loading="lazy"
+                            alt="Preview of the PHP Micro-framework project">
+                        <span class="text-sm" data-translate="projects.items.sixth.name">Micro-framework PHP</span>
+                        <a target="_blank" class="link">
+                            Demo
+                        </a>
+                    </article>
+
+                    <article class="project mix pwa">
+                        <img src="assets/images/projects/progress.jpg" loading="lazy"
+                            class="cover-image" alt="Preview of the accounting software project">
+                        <span class="text-sm" data-translate="projects.items.seventh.name">Accounting software</span>
+                        <a target="_blank" class="link">
+                            Demo
+                        </a>
+                    </article>
+
+                    <article class="project mix pwa">
+                        <img src="assets/images/projects/progress.jpg" loading="lazy"
+                            class="cover-image" alt="Preview of the farm Dashboard project">
+                        <span class="text-sm" data-translate="projects.items.eighth.name">Farm Dashboard</span>
                         <a target="_blank" class="link">
                             Demo
                         </a>

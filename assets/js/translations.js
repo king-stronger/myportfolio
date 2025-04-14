@@ -46,9 +46,12 @@ function changeLanguage (lang){
 
     elements.forEach(element => {
         let key = element.getAttribute('data-translate');
-
-        element.textContent = getTranslation(key.split('.'), translations, lang);
-    });
+        const translation = getTranslation(key.split('.'), translations, lang);
+    
+        if (translation !== undefined) {
+            element.textContent = translation;
+        }
+    });    
 }
 
 /**
@@ -59,8 +62,16 @@ function changeLanguage (lang){
  * @returns {String} Return the translation of the key selected
  */
 function getTranslation(keys, translations, lang) {
-    return keys.reduce((acc, key) => acc[key], translations[lang] || {});
+    return keys.reduce((acc, key) => {
+        if (acc && key in acc) {
+            return acc[key];
+        } else {
+            console.warn(`Translation missing for key: ${keys.join('.')}`);
+            return undefined;
+        }
+    }, translations[lang]);
 }
+
 
 function changeCV(lang){
     const cv = document.getElementById("cv-button");

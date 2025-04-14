@@ -180,6 +180,17 @@ input, textarea, select {
 
     /*************************** TYPOGRAPHY *********************************/
 
+    /*************************** IMAGE *********************************/
+    .cover-image {
+        object-fit: cover;
+    }
+
+    .contain-image {
+        object-fit: cover;
+    }
+    /*************************** IMAGE *********************************/
+
+
     /*************************** UTILITIES *********************************/
     .button {
         padding: 1rem;
@@ -534,8 +545,8 @@ input, textarea, select {
 
 /***************************************** PROJECTS ***********************************************/
 .projects-section .container {
-    --grid-gap: 3rem;
     --grid-repeat: 4;
+    --grid-gap: 3rem 2rem;
 }
 
 .project {
@@ -555,11 +566,6 @@ input, textarea, select {
 .project img {
     border-radius: 1rem;
     aspect-ratio: 1/1;
-}
-
-.project img {
-    object-fit: cover;
-    object-position: top;
 }
 
 .filters {

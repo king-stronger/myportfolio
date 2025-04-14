@@ -110,17 +110,36 @@
         "subtitle": "Découvrez Mon Travail",
         "items": {
             "first": {
-                "name": "Système ERP (En cours)"
+                "name": "Livraison de repas"
             },
             "second": {
-                "name": "Laboratoires de Cybersécurité"
+                "name": "Page d’accueil SaaS"
             },
             "third": {
-                "name": "Micro-framework php"
+                "name": "Site d'offres d'emploi"
             },
             "fourth": {
-                "name": "Portfolio Développeur"
+                "name": "Blog"
+            },
+            "fifth": {
+                "name": "Laboratoires de cybersécurité"
+            },
+            "sixth": {
+                "name": "Micro-framework PHP"
+            },
+            "seventh": {
+                "name": "Logiciel de comptabilité"
+            },
+            "eighth": {
+                "name": "Tableau de bord agricole"
             }
+        },
+        "filter": {
+            "all": "Tout",
+            "first": "Web",
+            "second": "Api",
+            "third": "Outils",
+            "fourth": "Sécurité"
         }
     },
     "contact": {
