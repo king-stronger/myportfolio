@@ -132,6 +132,9 @@
             },
             "eighth": {
                 "name": "Farm Dashboard"
+            },
+            "nineth": {
+                "name": "Survey app"
             }
         },
         "filter": {

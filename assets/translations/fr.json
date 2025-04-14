@@ -132,6 +132,9 @@
             },
             "eighth": {
                 "name": "Tableau de bord agricole"
+            },
+            "nineth": {
+                "name": "Application d'enquete"
             }
         },
         "filter": {

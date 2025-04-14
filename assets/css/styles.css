@@ -1,26 +1,12 @@
-@media (prefers-color-scheme: dark){
-    :root {
-        --text-color: hsl(216, 8%, 75%);
-        --title-color: hsl(219, 15%, 95%);
-        --accent-color: hsl(250, 66%, 75%);
-        --primary-color: hsl(323, 79%, 79%);
-        --container-color: hsl(218, 31%, 12%);
-        --background-color: hsl(221, 46%, 8%);
-    }
-}
-
-@media (prefers-color-scheme: light){
-    :root {
-        --title-color: hsl(0, 0%, 3%);
-        --text-color: hsl(216, 8%, 25%);
-        --accent-color: hsl(250, 66%, 25%);
-        --primary-color: hsl(323, 79%, 21%);
-        --container-color: hsl(218, 31%, 88%);
-        --background-color: hsl(0, 0%, 100%);
-    }
-}
-
 :root {
+    /**************** COLORS VARIABLES ************************/
+    --text-color: hsl(216, 8%, 75%);
+    --title-color: hsl(219, 15%, 95%);
+    --accent-color: hsl(250, 66%, 75%);
+    --primary-color: hsl(323, 79%, 79%);
+    --container-color: hsl(218, 31%, 12%);
+    --background-color: hsl(221, 46%, 8%);
+
     /**************** FONT SIZES VARIABLES ************************/
     --fs-100: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
     --fs-200: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
