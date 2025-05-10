@@ -131,10 +131,16 @@
                 "name": "School Accounting software"
             },
             "eighth": {
-                "name": "Farm Dashboard"
+                "name": "Farm monitoring"
             },
             "nineth": {
                 "name": "Survey app"
+            },
+            "tenth": {
+                "name": "Farm management"
+            },
+            "eleventh": {
+                "name": "ERP"
             }
         },
         "filter": {

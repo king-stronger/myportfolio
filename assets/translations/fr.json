@@ -131,10 +131,16 @@
                 "name": "Logiciel de comptabilité pour ecoles"
             },
             "eighth": {
-                "name": "Tableau de bord agricole"
+                "name": "Surveillance agricole"
             },
             "nineth": {
                 "name": "Application d'enquete"
+            },
+            "tenth": {
+                "name": "Gestion agricole"
+            },
+            "eleventh": {
+                "name": "ERP"
             }
         },
         "filter": {
