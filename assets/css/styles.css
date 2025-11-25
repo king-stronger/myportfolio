@@ -1,8 +1,8 @@
 :root {
     /****************** Font sizes ************/
-    --fs-000: clamp(0.64rem, 0.6556rem + -0.0201vw, 0.651rem);
-    --fs-100: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
-    --fs-200: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    --fs-000: clamp(0.5277rem, 0.7015rem + -0.2242vw, 0.651rem);
+    --fs-100: clamp(0.7035rem, 0.8131rem + -0.1414vw, 0.7813rem);
+    --fs-200: clamp(0.9375rem, 0.9374rem + 0.0004vw, 0.9377rem);
     --fs-300: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
     --fs-400: clamp(1.35rem, 1.2206rem + 0.575vw, 1.6663rem);
     --fs-500: clamp(1.62rem, 1.3741rem + 1.0929vw, 2.2211rem);
@@ -30,19 +30,25 @@
     --gap-5: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
     --gap-6: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --gap-7: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+    --gap-8: clamp(6.75rem, 4.9091rem + 8.1818vw, 11.25rem);
+    --gap-9: clamp(10.125rem, 8.1307rem + 8.8636vw, 15rem);
+    --gap-10: clamp(13.5rem, 11.3523rem + 9.5455vw, 18.75rem);
 
     /****************** Colors ************/
-    --bg-dark: hsl(0 0% 0%);
-    --bg: hsl(0 0% 5%);
-    --bg-light: hsl(0 0% 10%);
+    --bg-dark: hsl(240 10% 5%);
+    --bg: hsl(240 10% 10%);
+    --bg-light: hsl(240 10% 15%);
 
-    --text: hsl(0 0% 95%);
-    --text-muted : hsl(0 0% 70%);
+    --text: hsl(240 10% 95%);
+    --text-muted : hsl(240 10% 70%);
 
-    --clr-black: hsl(0 0% 0%);
-    --clr-white: hsl(0 0% 100%);
+    --clr-black: hsl(0 5% 5%);
+    --clr-white: hsl(0 5% 95%);
+    --clr-accent: hsl(60 71% 45%);
     --clr-primary: hsl(270 71% 45%);
-    --clr-secondary: hsl(60 71% 45%);
+
+    --clr-border: hsl(240 10% 20%);
+    --clr-container: hsl(240 17% 88%);
 
     /****************** Shadows ************/
     --shadow-light:
@@ -55,18 +61,23 @@
     0 8px 16px hsl(0 0% 0% / 0.24),
     0 16px 32px hsl(0 0% 0% / 0.12);
 }
-
+/*
 @media (prefers-color-scheme: light) {
     :root {
-    --bg-light: hsl(0 0% 100%);
-    --bg: hsl(0 0% 95%);
-    --bg-dark: hsl(0 0% 90%);
+    --bg-light: hsl(240 10% 85%);
+    --bg: hsl(240 25% 98%);
+    --bg-dark: hsl(240 10% 100%);
 
-    --text: hsl(0 0% 5%);
-    --text-muted : hsl(0 0% 30%);
+    --text: hsl(240 10% 5%);
+    --text-muted : hsl(240 10% 30%);
+
+    --clr-accent: hsl(60 71% 45%);
+    --clr-primary: hsl(270 71% 45%);
+
+    --clr-border: hsl(240 10% 80%);
     }
 }
-
+*/
 @layer reset, base, layout, utilities;
 
 @layer reset {
@@ -127,11 +138,66 @@
 }
 
 @layer base {
+    body {
+        color: var(--text);
+        background-color: var(--bg-dark);
+    }
 
+    .about-card {
+        border-radius: .5rem;
+        background-color: var(--bg);
+    }
+
+    .technology {
+        border-radius: .5rem;
+        font-size: var(--fs-200);
+        background-color: var(--bg);
+
+        img {
+            border-radius: .25rem;
+            background-color: var(--clr-container);
+        }
+    }
 }
 
 @layer layout {
-    
+    section + section {
+        margin-top: var(--gap-9);
+    }
+
+    .about-section .wrapper {
+        display: grid;
+        gap: var(--gap-4);
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+
+    .presentation {
+        grid-column: 1 / -1;
+    }
+
+    .about-card {
+        padding: var(--padding-4);
+    }
+
+    .technology-list {
+        display: grid;
+        gap: var(--gap-2);
+        grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    }
+
+    .technology {
+        display: flex;
+        gap: var(--gap-1);
+        align-items: center;
+        padding: var(--padding-0);
+
+        img {
+            width: 40px;
+            height: 40px;
+            padding: .25rem;
+            object-fit: contain;
+        }
+    }
 }
 
 @layer utilities {
@@ -237,15 +303,15 @@
         transition: background-color 0.3s, color 0.3s;
     }
 
-    .btn-secondary {
+    .btn-accent {
         color: var(--clr-primary);
         border: 1px solid var(--clr-primary);
         transition: background-color 0.3s, color 0.3s;
     }
 
-    .btn-primary:hover, .btn-secondary:hover {
+    .btn-primary:hover, .btn-accent:hover {
         color: var(--clr-white);
-        background-color: var(--clr-secondary);
+        background-color: var(--clr-accent);
     }
 
     .link {
@@ -257,11 +323,11 @@
 
     .link:hover {
         text-decoration: none;
-        color: var(--clr-secondary);
+        color: var(--clr-accent);
     }
 
     .accent {
-        color: var(--clr-secondary);
+        color: var(--clr-accent);
     }
     /*********************** BUTTONS**************************/
 }
