@@ -1,0 +1,258 @@
+:root {
+    /****************** Font sizes ************/
+    --fs-000: clamp(0.64rem, 0.6556rem + -0.0201vw, 0.651rem);
+    --fs-100: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+    --fs-200: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    --fs-300: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    --fs-400: clamp(1.35rem, 1.2206rem + 0.575vw, 1.6663rem);
+    --fs-500: clamp(1.62rem, 1.3741rem + 1.0929vw, 2.2211rem);
+    --fs-600: clamp(1.944rem, 1.5281rem + 1.8486vw, 2.9607rem);
+    --fs-700: clamp(2.3328rem, 1.6726rem + 2.9343vw, 3.9467rem);
+    --fs-800: clamp(2.7994rem, 1.7924rem + 4.4755vw, 5.2609rem);
+
+    /****************** Paddings ************/
+    --padding-0: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --padding-1: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+    --padding-2: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+    --padding-3: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    --padding-4: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+    --padding-5: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+    --padding-6: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+    --padding-7: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+    --padding-8: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+    /****************** Margins and gaps ************/
+    --gap-0: clamp(0.3125rem, 0.1847rem + 0.5682vw, 0.625rem);
+    --gap-1: clamp(0.5625rem, 0.4091rem + 0.6818vw, 0.9375rem);
+    --gap-2: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem);
+    --gap-3: clamp(1.125rem, 0.8182rem + 1.3636vw, 1.875rem);
+    --gap-4: clamp(1.6875rem, 1.3551rem + 1.4773vw, 2.5rem);
+    --gap-5: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
+    --gap-6: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
+    --gap-7: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+
+    /****************** Colors ************/
+    --bg-dark: hsl(0 0% 0%);
+    --bg: hsl(0 0% 5%);
+    --bg-light: hsl(0 0% 10%);
+
+    --text: hsl(0 0% 95%);
+    --text-muted : hsl(0 0% 70%);
+
+    --clr-black: hsl(0 0% 0%);
+    --clr-white: hsl(0 0% 100%);
+    --clr-primary: hsl(270 71% 45%);
+    --clr-secondary: hsl(60 71% 45%);
+
+    /****************** Shadows ************/
+    --shadow-light:
+    0 1px 2px hsl(0 0% 0% / 0.12),
+    0 2px 4px hsl(0 0% 0% / 0.08);
+    --shadow-medium:
+    0 3px 6px hsl(0 0% 0% / 0.16),
+    0 6px 12px hsl(0 0% 0% / 0.08);
+    --shadow-high:
+    0 8px 16px hsl(0 0% 0% / 0.24),
+    0 16px 32px hsl(0 0% 0% / 0.12);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --bg-light: hsl(0 0% 100%);
+    --bg: hsl(0 0% 95%);
+    --bg-dark: hsl(0 0% 90%);
+
+    --text: hsl(0 0% 5%);
+    --text-muted : hsl(0 0% 30%);
+    }
+}
+
+/****************************************** RESET ***************************************/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: inter, sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+p, span, li {
+    line-height: 1.6;
+    text-wrap: pretty;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+input, textarea, select {
+    border: none;
+    outline: none;
+    color: inherit;
+    background: none;
+}
+
+img, video, picture, svg {
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+/****************************************** RESET ***************************************/
+
+
+/****************************************** UTILITIES ***************************************/
+    /****************************************** STRUCTURE**************************/
+    .flow > * + * {
+        margin-top: var(--gap-2);
+    }
+
+    .flow-sm > * + * {
+        margin-top: var(--gap-1);
+    }
+
+    .flow-md > * + * {
+        margin-top: var(--gap-3);
+    }
+
+    .flow-lg > * + * {
+        margin-top: var(--gap-4);
+    }
+
+    .wrapper {
+        max-width: 1080px;
+        margin-inline: auto;
+        padding-inline: var(--padding-4);
+    }
+    /*********************** STRUCTURE**************************/
+
+
+    /*********************** TYPOGRAPHY**************************/
+    .text {
+        font-size: var(--fs-300);
+    }
+
+    .text-xs {
+        font-size: var(--fs-100);
+    }
+
+    .text-sm {
+        font-size: var(--fs-200);
+    }
+
+    .text-md {
+        font-size: var(--fs-400);
+    }
+
+    .text-lg {
+        font-size: var(--fs-500);
+    }
+
+    .text-xl {
+        font-size: var(--fs-600);
+    }
+
+    .text-2xl {
+        font-size: var(--fs-700);
+    }
+
+    .text-3xl {
+        font-size: var(--fs-800);
+    }
+
+    .text-lead {
+        color: var(--text);
+    }
+
+    .text-muted {
+        color: var(--text-muted);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-bold {
+        font-weight: 700;
+    }
+    /*********************** TYPOGRAPHY**************************/
+
+    /*********************** BUTTONS**************************/
+    .btn, .btn-sm, .btn-lg {
+        font-weight: 600;
+        border-radius: .5rem;
+    }
+
+    .btn {
+        font-size: var(--fs-200);
+        padding: var(--padding-2) var(--padding-4);
+    }
+
+    .btn-sm {
+        font-size: var(--fs-100);
+        padding: var(--padding-1) var(--padding-3);
+    }
+
+    .btn-lg {
+        font-size: var(--fs-300);
+        padding: var(--padding-3) var(--padding-5);
+    }
+
+    .btn-primary {
+        color: var(--clr-white);
+        background-color: var(--clr-primary);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-secondary {
+        color: var(--clr-primary);
+        border: 1px solid var(--clr-primary);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-primary:hover, .btn-secondary:hover {
+        color: var(--clr-white);
+        background-color: var(--clr-secondary);
+    }
+
+    .link {
+        color: var(--clr-primary);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.3s;
+    }
+
+    .link:hover {
+        text-decoration: none;
+        color: var(--clr-secondary);
+    }
+
+    .accent {
+        color: var(--clr-secondary);
+    }
+    /*********************** BUTTONS**************************/
+/****************************************** UTILITIES ***************************************/
