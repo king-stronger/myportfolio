@@ -67,65 +67,74 @@
     }
 }
 
-/****************************************** RESET ***************************************/
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    box-sizing: border-box;
+@layer reset, base, layout, utilities;
+
+@layer reset {
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+        font-family: inter, sans-serif;
+    }
+    
+    body {
+        min-height: 100dvh;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+        text-wrap: balance;
+    }
+    
+    p, span, li {
+        line-height: 1.6;
+        text-wrap: pretty;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    button {
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
+    
+    input, textarea, select {
+        border: none;
+        outline: none;
+        color: inherit;
+        background: none;
+    }
+    
+    img, video, picture, svg {
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-    font-family: inter, sans-serif;
+@layer base {
+
 }
 
-body {
-    min-height: 100dvh;
+@layer layout {
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
-    text-wrap: balance;
-}
-
-p, span, li {
-    line-height: 1.6;
-    text-wrap: pretty;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    background: none;
-}
-
-input, textarea, select {
-    border: none;
-    outline: none;
-    color: inherit;
-    background: none;
-}
-
-img, video, picture, svg {
-    height: auto;
-    display: block;
-    max-width: 100%;
-}
-/****************************************** RESET ***************************************/
-
-
-/****************************************** UTILITIES ***************************************/
+@layer utilities {
     /****************************************** STRUCTURE**************************/
     .flow > * + * {
         margin-top: var(--gap-2);
@@ -255,4 +264,4 @@ img, video, picture, svg {
         color: var(--clr-secondary);
     }
     /*********************** BUTTONS**************************/
-/****************************************** UTILITIES ***************************************/
+}
