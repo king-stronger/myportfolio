@@ -35,19 +35,19 @@
     --gap-10: clamp(13.5rem, 11.3523rem + 9.5455vw, 18.75rem);
 
     /****************** Colors ************/
-    --bg-dark: hsl(240 10% 5%);
-    --bg: hsl(240 10% 10%);
-    --bg-light: hsl(240 10% 15%);
+    --bg-dark: hsl(240 15% 5%);
+    --bg: hsl(240 15% 10%);
+    --bg-light: hsl(240 15% 15%);
 
-    --text: hsl(240 10% 95%);
-    --text-muted : hsl(240 10% 70%);
+    --text: hsl(240 15% 95%);
+    --text-muted : hsl(240 15% 70%);
 
     --clr-black: hsl(0 5% 5%);
     --clr-white: hsl(0 5% 95%);
     --clr-accent: hsl(60 71% 45%);
     --clr-primary: hsl(270 71% 45%);
 
-    --clr-border: hsl(240 10% 20%);
+    --clr-border: hsl(240 15% 20%);
     --clr-container: hsl(240 17% 88%);
 
     /****************** Shadows ************/
@@ -61,23 +61,25 @@
     0 8px 16px hsl(0 0% 0% / 0.24),
     0 16px 32px hsl(0 0% 0% / 0.12);
 }
+
 /*
 @media (prefers-color-scheme: light) {
     :root {
-    --bg-light: hsl(240 10% 85%);
-    --bg: hsl(240 25% 98%);
-    --bg-dark: hsl(240 10% 100%);
+    --bg-light: hsl(240 25% 75%);
+    --bg: hsl(240 63% 95%);
+    --bg-dark: hsl(240 15% 100%);
 
-    --text: hsl(240 10% 5%);
-    --text-muted : hsl(240 10% 30%);
+    --text: hsl(240 15% 5%);
+    --text-muted : hsl(240 15% 30%);
 
     --clr-accent: hsl(60 71% 45%);
     --clr-primary: hsl(270 71% 45%);
 
-    --clr-border: hsl(240 10% 80%);
+    --clr-border: hsl(240 15% 80%);
     }
 }
 */
+
 @layer reset, base, layout, utilities;
 
 @layer reset {
@@ -103,9 +105,10 @@
         text-wrap: balance;
     }
     
-    p, span, li {
+    p, span {
         line-height: 1.6;
         text-wrap: pretty;
+        color: var(--text-muted);
     }
     
     ul {
@@ -158,6 +161,19 @@
             background-color: var(--clr-container);
         }
     }
+
+    /************* Projects Section *************/
+    .project-card {
+        border-radius: .5rem;
+        background-color: var(--bg);
+    }
+
+    .stack li {
+        border-radius: .25rem;
+        font-size: var(--fs-100);
+        background-color: var(--bg-light);
+    }
+    /************* Projects Section *************/
 }
 
 @layer layout {
@@ -179,6 +195,7 @@
         padding: var(--padding-4);
     }
 
+    /************* Technologies Section *************/
     .technology-list {
         display: grid;
         gap: var(--gap-2);
@@ -198,12 +215,42 @@
             object-fit: contain;
         }
     }
+    /************* Technologies Section *************/
+
+    /************* Projects Section *************/
+    .project-list {
+        display: grid;
+        gap: var(--gap-3);
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+
+    .project-card {
+        grid-row: span 4;
+        padding: var(--padding-2);
+        grid-template-rows: subgrid;
+    }
+
+    .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-2) var(--gap-0);
+        
+        li {
+            padding: var(--padding-0) var(--padding-1);
+        }
+    }
+    /************* Projects Section *************/
 }
 
 @layer utilities {
     /****************************************** STRUCTURE**************************/
     .flow > * + * {
         margin-top: var(--gap-2);
+    }
+
+    .flow-xs > * + * {
+        margin-top: var(--gap-0);
     }
 
     .flow-sm > * + * {
@@ -278,40 +325,49 @@
 
     /*********************** BUTTONS**************************/
     .btn, .btn-sm, .btn-lg {
-        font-weight: 600;
         border-radius: .5rem;
     }
 
     .btn {
-        font-size: var(--fs-200);
-        padding: var(--padding-2) var(--padding-4);
+        padding: var(--padding-0) var(--padding-1);
+        font-size: calc((var(--fs-100) + var(--fs-200)) / 2);
     }
 
     .btn-sm {
         font-size: var(--fs-100);
-        padding: var(--padding-1) var(--padding-3);
+        padding: var(--padding-0) var(--padding-1);
     }
 
     .btn-lg {
-        font-size: var(--fs-300);
-        padding: var(--padding-3) var(--padding-5);
+        font-size: var(--fs-200);
+        padding: var(--padding-1) var(--padding-3);
     }
 
     .btn-primary {
-        color: var(--clr-white);
         background-color: var(--clr-primary);
         transition: background-color 0.3s, color 0.3s;
-    }
 
-    .btn-accent {
-        color: var(--clr-primary);
-        border: 1px solid var(--clr-primary);
+        * {
+            color: var(--clr-white);
+        }
+    }    
+
+    .btn-secondary {
+        outline: 1px solid var(--clr-primary);
         transition: background-color 0.3s, color 0.3s;
+
+        * {
+            color: var(--clr-primary);
+        }
     }
 
-    .btn-primary:hover, .btn-accent:hover {
-        color: var(--clr-white);
+    .btn-primary:hover, .btn-secondary:hover {
+        outline: none;
         background-color: var(--clr-accent);
+
+        * {
+            color: var(--clr-white);
+        }
     }
 
     .link {
