@@ -8,16 +8,37 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="about-section">
+    <header>
+        <div class="wrapper">
+            <h1 class="text-md">Stronger</h1>
+
+            <nav>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section" id="about">
         <div class="wrapper">
             <div class="presentation about-card flow-sm">
                 <p class="text-md text-lead">Hello ! My name is <strong class="accent">Stronger Alaefule</strong></p>
                 <p class="text-sm">
                     <i class="ri-map-pin-fill text-lead"></i>
                     <span class="text-lead">Bamako, Mali</span>
+                    <ul class="socials">
+                        <li class="text-md"><a href="https://github.com/king-stronger" class="social-link ri-github-fill"></a></li>
+                        <li class="text-md"><a href="https://linkedin.com/" class="social-link ri-linkedin-box-fill"></a></li>
+                        <li class="text-md"><a href="https://wa.me/22395308631" class="social-link ri-whatsapp-fill"></a></li>
+                        <li class="text-md"><a href="mailto:lkingstronger@gmail.com" class="social-link ri-mail-fill"></a></li>
+                    </ul>
                 </p>
-                <p class="text-sm">I'm a fullstack developer for almost 4 years with a background in cybersecurity</p>
-                <p class="text-sm">I specialized on scalable, performant and secure applications</p>
+                <p>
+                    <span class="text-sm">I'm a fullstack developer for almost 4 years with a background in cybersecurity</span><br>
+                    <span class="text-sm">I specialized on scalable, performant and secure applications</span>
+                </p>
+                <a href="" class="btn btn-primary">Download CV</a>
             </div>
             <div class="about-card flow-xs">
                 <h2 class="text text-bold">Backend</h2>
@@ -34,13 +55,13 @@
             <div class="about-card flow-xs">
                 <h2 class="text text-bold">Cybersecurity</h2>
                 <p class="text-sm">
-                    I have a background in cybersecurity which help me to build secure applications
+                    I build with security best practices by default: data validation, secure APIs, anti-injection measures, and proper access controls
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="technologies-section">
+    <section class="technologies-section" id="skills">
         <div class="wrapper flow">
             <h2 class="text-md text-bold">Current technologies</h2>
             <p class="text-sm">
@@ -107,7 +128,7 @@
         </div>
     </section>
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="wrapper flow">
             <h2 class="text-md text-bold">Projects</h2>
             <p class="text-sm">
