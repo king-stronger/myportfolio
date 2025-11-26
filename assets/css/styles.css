@@ -52,14 +52,16 @@
 
     /****************** Shadows ************/
     --shadow-light:
-    0 1px 2px hsl(0 0% 0% / 0.12),
-    0 2px 4px hsl(0 0% 0% / 0.08);
+    0 2px 4px hsl(0 0% 0% / 0.10),
+    0 0 6px hsl(0 0% 0% / 0.06);
+
     --shadow-medium:
-    0 3px 6px hsl(0 0% 0% / 0.16),
-    0 6px 12px hsl(0 0% 0% / 0.08);
+    0 4px 8px hsl(0 0% 0% / 0.12),
+    0 0 12px hsl(0 0% 0% / 0.08);
+
     --shadow-high:
-    0 8px 16px hsl(0 0% 0% / 0.24),
-    0 16px 32px hsl(0 0% 0% / 0.12);
+    0 8px 16px hsl(0 0% 0% / 0.16),
+    0 0 24px hsl(0 0% 0% / 0.10);
 }
 
 /*
@@ -146,6 +148,16 @@
         background-color: var(--bg-dark);
     }
 
+    /************* Header Section *************/
+    header {
+        background-color: var(--bg);
+    }
+
+    .nav-link:hover, .social-link:hover {
+        color: var(--clr-primary);
+    }
+    /************* Header Section *************/
+
     .about-card {
         border-radius: .5rem;
         background-color: var(--bg);
@@ -177,10 +189,39 @@
 }
 
 @layer layout {
+    section:first-of-type {
+        margin-top: var(--gap-7);
+    }
+
     section + section {
         margin-top: var(--gap-9);
     }
 
+    /************* Header Section *************/
+    header {
+        padding: var(--padding-2) 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        column-gap: var(--gap-2);
+    }
+
+    .socials {
+        display: flex;
+        gap: var(--gap-2);
+        margin-top: var(--gap-2);
+    }
+    /************* Header Section *************/
+
+
+    /************* About Section *************/
     .about-section .wrapper {
         display: grid;
         gap: var(--gap-4);
@@ -194,6 +235,7 @@
     .about-card {
         padding: var(--padding-4);
     }
+    /************* About Section *************/
 
     /************* Technologies Section *************/
     .technology-list {
@@ -326,10 +368,11 @@
     /*********************** BUTTONS**************************/
     .btn, .btn-sm, .btn-lg {
         border-radius: .5rem;
+        display: inline-block;
     }
 
     .btn {
-        padding: var(--padding-0) var(--padding-1);
+        padding: var(--padding-1) var(--padding-2);
         font-size: calc((var(--fs-100) + var(--fs-200)) / 2);
     }
 
@@ -340,7 +383,7 @@
 
     .btn-lg {
         font-size: var(--fs-200);
-        padding: var(--padding-1) var(--padding-3);
+        padding: var(--padding-2) var(--padding-3);
     }
 
     .btn-primary {
@@ -383,7 +426,7 @@
     }
 
     .accent {
-        color: var(--clr-accent);
+        color: var(--clr-primary);
     }
     /*********************** BUTTONS**************************/
 }
