@@ -310,7 +310,7 @@
     .wrapper {
         max-width: 1080px;
         margin-inline: auto;
-        padding-inline: var(--padding-4);
+        padding-inline: var(--padding-3);
     }
     /*********************** STRUCTURE**************************/
 
